@@ -21,9 +21,18 @@ function isActive(link: { path: string; hash: string }) {
 }
 
 const i18n = useI18n()
+const localeCookie = useCookie('locale')
 const switchLanguage = (locale: string) => {
   i18n.locale.value = locale
+  localeCookie.value = locale
 }
+
+// при завантаженні
+onMounted(() => {
+  if (localeCookie.value) {
+    i18n.locale.value = localeCookie.value
+  }
+})
 </script>
 
 <template>

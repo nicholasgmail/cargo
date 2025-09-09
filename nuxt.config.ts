@@ -64,12 +64,12 @@ export default defineNuxtConfig({
         '@nuxtjs/i18n'
     ],
     i18n: {
+        strategy: 'prefix_except_default',
         locales: [
             { code: 'cs', name: 'Čeština', iso: 'cs-CZ', file: 'cs.json' },
             { code: 'en', name: 'English', iso: 'en-US', file: 'en.json' }
         ],
         defaultLocale: 'cs',
-        strategy: 'prefix_except_default',
         lazy: true,
         vueI18n: './i18n.config.ts',
         langDir: 'locales/'

@@ -184,7 +184,7 @@ const description = "Large pieces of furniture such as wardrobes, beds or tables
                 <thead>
                 <tr>
                   <th>
-                                <span style="visibility: inherit !important;">{{$t("Typ služby")}}
+                                <span style="visibility: inherit !important;">{{$t("Service type")}}
                                 </span>
                   </th>
                   <th>
