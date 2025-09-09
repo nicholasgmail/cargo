@@ -127,7 +127,7 @@ definePageMeta({
                     <td>{{$t("Moving an object from 100 to 199 kg")}}
                     </td>
                     <td class="price" data-label="Základní cena"><span style="color: #ff0000;">1 250,-</span></td>
-                    <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><ya-tr-span data-index="63-0"
+                    <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><span data-index="63-0"
                                                                                                        data-translated="false"
                                                                                                        data-source-lang="cs"
                                                                                                        data-target-lang="uk"
@@ -135,7 +135,7 @@ definePageMeta({
                                                                                                        data-translation="+ 250,-"
                                                                                                        data-ch="0"
                                                                                                        data-type="trSpan"
-                                                                                                       style="visibility: inherit !important;">+ 250,-</ya-tr-span></span><br><span
+                                                                                                       style="visibility: inherit !important;">+ 250,-</span></span><br><span
                         style="color: #ff0000;">{{$t("per floor or 20 m of delivery")}}</span>
                     </td>
                   </tr>
@@ -144,7 +144,7 @@ definePageMeta({
                     </td>
                     <td class="price" data-label="Základní cena"><p><span style="color: #ff0000;">1 800,-</span></p>
                     </td>
-                    <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><ya-tr-span data-index="65-0"
+                    <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><span data-index="65-0"
                                                                                                        data-translated="false"
                                                                                                        data-source-lang="cs"
                                                                                                        data-target-lang="uk"
@@ -152,7 +152,7 @@ definePageMeta({
                                                                                                        data-translation="+ 350,-"
                                                                                                        data-ch="0"
                                                                                                        data-type="trSpan"
-                                                                                                       style="visibility: inherit !important;">+ 350,-</ya-tr-span></span><br><span
+                                                                                                       style="visibility: inherit !important;">+ 350,-</span></span><br><span
                         style="color: #ff0000;">{{$t("per floor or 20 m of delivery")}}</span>
                     </td>
                   </tr>
@@ -161,7 +161,7 @@ definePageMeta({
                     </td>
                     <td class="price" data-label="Základní cena"><p><span style="color: #ff0000;">3 000,-</span></p>
                     </td>
-                    <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><ya-tr-span data-index="67-0"
+                    <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><span data-index="67-0"
                                                                                                        data-translated="false"
                                                                                                        data-source-lang="cs"
                                                                                                        data-target-lang="uk"
@@ -169,7 +169,7 @@ definePageMeta({
                                                                                                        data-translation="+ 500,-"
                                                                                                        data-ch="0"
                                                                                                        data-type="trSpan"
-                                                                                                       style="visibility: inherit !important;">+ 500,-</ya-tr-span></span><br><span
+                                                                                                       style="visibility: inherit !important;">+ 500,-</span></span><br><span
                         style="color: #ff0000;">{{$t("per floor or 20 m of delivery")}}</span>
                     </td>
                   </tr>
@@ -178,7 +178,7 @@ definePageMeta({
                     </td>
                     <td class="price" data-label="Základní cena"><p><span style="color: #ff0000;">5 000,-</span></p>
                     </td>
-                    <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><ya-tr-span data-index="69-0"
+                    <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><span data-index="69-0"
                                                                                                        data-translated="false"
                                                                                                        data-source-lang="cs"
                                                                                                        data-target-lang="uk"
@@ -186,7 +186,7 @@ definePageMeta({
                                                                                                        data-translation="+ 750,-"
                                                                                                        data-ch="0"
                                                                                                        data-type="trSpan"
-                                                                                                       style="visibility: inherit !important;">+ 750,-</ya-tr-span></span><br><span
+                                                                                                       style="visibility: inherit !important;">+ 750,-</span></span><br><span
                         style="color: #ff0000;"> {{$t("per floor or 20 m of delivery")}}</span>
                     </td>
                   </tr>

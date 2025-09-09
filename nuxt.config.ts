@@ -10,6 +10,7 @@ export default defineNuxtConfig({
         '~/assets/css/tailwind.css'
     ],
     app: {
+        baseURL: '/',
         head: {
             meta: [
                 // <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,10 +26,6 @@ export default defineNuxtConfig({
                 {src: '/assets/js/util.js', tagPosition: "bodyClose"},
                 {src: '/assets/js/main.js', tagPosition: "bodyClose"},
             ],
-            // link: [
-            // <link rel="stylesheet" href="https://myawesome-lib.css">
-            //  { rel: 'stylesheet', href: 'https://awesome-lib.css' }
-            //],
             // please note that this is an area that is likely to change
             style: [
                 // <style>:root { color: red }</style>
@@ -39,7 +36,6 @@ export default defineNuxtConfig({
                 {textContent: 'JavaScript is required'}
             ]
         },
-        public: '/docs',
     },
     postcss: {
         plugins: {
@@ -47,6 +43,7 @@ export default defineNuxtConfig({
             autoprefixer: {},
         },
     },
+    //public: '/docs',
     devtools: {enabled: true},
     nitro: {
         prerender: {
@@ -55,7 +52,41 @@ export default defineNuxtConfig({
             ],
             crawlLinks: true
         },
-        preset: 'static'
+        // Куди збирається сервер (за замовчуванням .output/)
+        output: {
+            dir: '.output',
+            serverDir: '.output/server',
+            publicDir: '.output/public'
+        },
+
+        // Пресет для деплоя
+        preset: 'netlify', // 'static', 'node-server', 'vercel', 'netlify', 'cloudflare', ...
+
+        // Шляхи, які будуть включені у збірку
+        include: [
+            './server/**',    // всі твої API
+            './utils/**'      // кастомні утиліти
+        ],
+
+        // Ігноровані файли
+        exclude: [
+            '**/*.spec.ts'
+        ],
+
+        // Кастомні маршрути
+        routeRules: {
+            '/api/**': { cors: true },   // дозволити CORS
+            '/admin/**': { prerender: false }, // не пререндерити адмінку
+            '/blog/**': { swr: 60 }      // ISR (статичне оновлення раз на 60с)
+        },
+
+        // Proxy (наприклад, для API бекенду)
+        devProxy: {
+            '/api/': {
+                target: 'http://localhost:4000',
+                changeOrigin: true
+            }
+        }
     },
     modules: [
         '@nuxt/image',
