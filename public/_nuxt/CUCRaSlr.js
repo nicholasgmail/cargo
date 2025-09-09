@@ -1,0 +1,1 @@
+import{e as n,c as o,o as a,a as t,t as s}from"#entry";const c={class:"!pt-5"},i={class:"major !mb-2"},r={class:"text-center"},p=n({__name:"aboutb",props:{title:{type:String},description:{type:String}},setup(e){return(_,l)=>(a(),o("section",c,[t("h2",i,[t("span",null,s(e.title),1)]),t("p",r,s(e.description),1)]))}}),b=Object.assign(p,{__name:"BannerAboutb"});export{b as A};

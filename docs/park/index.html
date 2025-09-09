@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=deviyace-width, initial-scale=1"><style id="nuxt-ui-colors">@layer base {
+  :root {
+  --ui-color-primary-50: var(--color-green-50, oklch(98.2% 0.018 155.826));
+  --ui-color-primary-100: var(--color-green-100, oklch(96.2% 0.044 156.743));
+  --ui-color-primary-200: var(--color-green-200, oklch(92.5% 0.084 155.995));
+  --ui-color-primary-300: var(--color-green-300, oklch(87.1% 0.15 154.449));
+  --ui-color-primary-400: var(--color-green-400, oklch(79.2% 0.209 151.711));
+  --ui-color-primary-500: var(--color-green-500, oklch(72.3% 0.219 149.579));
+  --ui-color-primary-600: var(--color-green-600, oklch(62.7% 0.194 149.214));
+  --ui-color-primary-700: var(--color-green-700, oklch(52.7% 0.154 150.069));
+  --ui-color-primary-800: var(--color-green-800, oklch(44.8% 0.119 151.328));
+  --ui-color-primary-900: var(--color-green-900, oklch(39.3% 0.095 152.535));
+  --ui-color-primary-950: var(--color-green-950, oklch(26.6% 0.065 152.934));
+  --ui-color-secondary-50: var(--color-blue-50, oklch(97% 0.014 254.604));
+  --ui-color-secondary-100: var(--color-blue-100, oklch(93.2% 0.032 255.585));
+  --ui-color-secondary-200: var(--color-blue-200, oklch(88.2% 0.059 254.128));
+  --ui-color-secondary-300: var(--color-blue-300, oklch(80.9% 0.105 251.813));
+  --ui-color-secondary-400: var(--color-blue-400, oklch(70.7% 0.165 254.624));
+  --ui-color-secondary-500: var(--color-blue-500, oklch(62.3% 0.214 259.815));
+  --ui-color-secondary-600: var(--color-blue-600, oklch(54.6% 0.245 262.881));
+  --ui-color-secondary-700: var(--color-blue-700, oklch(48.8% 0.243 264.376));
+  --ui-color-secondary-800: var(--color-blue-800, oklch(42.4% 0.199 265.638));
+  --ui-color-secondary-900: var(--color-blue-900, oklch(37.9% 0.146 265.522));
+  --ui-color-secondary-950: var(--color-blue-950, oklch(28.2% 0.091 267.935));
+  --ui-color-success-50: var(--color-green-50, oklch(98.2% 0.018 155.826));
+  --ui-color-success-100: var(--color-green-100, oklch(96.2% 0.044 156.743));
+  --ui-color-success-200: var(--color-green-200, oklch(92.5% 0.084 155.995));
+  --ui-color-success-300: var(--color-green-300, oklch(87.1% 0.15 154.449));
+  --ui-color-success-400: var(--color-green-400, oklch(79.2% 0.209 151.711));
+  --ui-color-success-500: var(--color-green-500, oklch(72.3% 0.219 149.579));
+  --ui-color-success-600: var(--color-green-600, oklch(62.7% 0.194 149.214));
+  --ui-color-success-700: var(--color-green-700, oklch(52.7% 0.154 150.069));
+  --ui-color-success-800: var(--color-green-800, oklch(44.8% 0.119 151.328));
+  --ui-color-success-900: var(--color-green-900, oklch(39.3% 0.095 152.535));
+  --ui-color-success-950: var(--color-green-950, oklch(26.6% 0.065 152.934));
+  --ui-color-info-50: var(--color-blue-50, oklch(97% 0.014 254.604));
+  --ui-color-info-100: var(--color-blue-100, oklch(93.2% 0.032 255.585));
+  --ui-color-info-200: var(--color-blue-200, oklch(88.2% 0.059 254.128));
+  --ui-color-info-300: var(--color-blue-300, oklch(80.9% 0.105 251.813));
+  --ui-color-info-400: var(--color-blue-400, oklch(70.7% 0.165 254.624));
+  --ui-color-info-500: var(--color-blue-500, oklch(62.3% 0.214 259.815));
+  --ui-color-info-600: var(--color-blue-600, oklch(54.6% 0.245 262.881));
+  --ui-color-info-700: var(--color-blue-700, oklch(48.8% 0.243 264.376));
+  --ui-color-info-800: var(--color-blue-800, oklch(42.4% 0.199 265.638));
+  --ui-color-info-900: var(--color-blue-900, oklch(37.9% 0.146 265.522));
+  --ui-color-info-950: var(--color-blue-950, oklch(28.2% 0.091 267.935));
+  --ui-color-warning-50: var(--color-yellow-50, oklch(98.7% 0.026 102.212));
+  --ui-color-warning-100: var(--color-yellow-100, oklch(97.3% 0.071 103.193));
+  --ui-color-warning-200: var(--color-yellow-200, oklch(94.5% 0.129 101.54));
+  --ui-color-warning-300: var(--color-yellow-300, oklch(90.5% 0.182 98.111));
+  --ui-color-warning-400: var(--color-yellow-400, oklch(85.2% 0.199 91.936));
+  --ui-color-warning-500: var(--color-yellow-500, oklch(79.5% 0.184 86.047));
+  --ui-color-warning-600: var(--color-yellow-600, oklch(68.1% 0.162 75.834));
+  --ui-color-warning-700: var(--color-yellow-700, oklch(55.4% 0.135 66.442));
+  --ui-color-warning-800: var(--color-yellow-800, oklch(47.6% 0.114 61.907));
+  --ui-color-warning-900: var(--color-yellow-900, oklch(42.1% 0.095 57.708));
+  --ui-color-warning-950: var(--color-yellow-950, oklch(28.6% 0.066 53.813));
+  --ui-color-error-50: var(--color-red-50, oklch(97.1% 0.013 17.38));
+  --ui-color-error-100: var(--color-red-100, oklch(93.6% 0.032 17.717));
+  --ui-color-error-200: var(--color-red-200, oklch(88.5% 0.062 18.334));
+  --ui-color-error-300: var(--color-red-300, oklch(80.8% 0.114 19.571));
+  --ui-color-error-400: var(--color-red-400, oklch(70.4% 0.191 22.216));
+  --ui-color-error-500: var(--color-red-500, oklch(63.7% 0.237 25.331));
+  --ui-color-error-600: var(--color-red-600, oklch(57.7% 0.245 27.325));
+  --ui-color-error-700: var(--color-red-700, oklch(50.5% 0.213 27.518));
+  --ui-color-error-800: var(--color-red-800, oklch(44.4% 0.177 26.899));
+  --ui-color-error-900: var(--color-red-900, oklch(39.6% 0.141 25.723));
+  --ui-color-error-950: var(--color-red-950, oklch(25.8% 0.092 26.042));
+  --ui-color-neutral-50: var(--color-slate-50, oklch(98.4% 0.003 247.858));
+  --ui-color-neutral-100: var(--color-slate-100, oklch(96.8% 0.007 247.896));
+  --ui-color-neutral-200: var(--color-slate-200, oklch(92.9% 0.013 255.508));
+  --ui-color-neutral-300: var(--color-slate-300, oklch(86.9% 0.022 252.894));
+  --ui-color-neutral-400: var(--color-slate-400, oklch(70.4% 0.04 256.788));
+  --ui-color-neutral-500: var(--color-slate-500, oklch(55.4% 0.046 257.417));
+  --ui-color-neutral-600: var(--color-slate-600, oklch(44.6% 0.043 257.281));
+  --ui-color-neutral-700: var(--color-slate-700, oklch(37.2% 0.044 257.287));
+  --ui-color-neutral-800: var(--color-slate-800, oklch(27.9% 0.041 260.031));
+  --ui-color-neutral-900: var(--color-slate-900, oklch(20.8% 0.042 265.755));
+  --ui-color-neutral-950: var(--color-slate-950, oklch(12.9% 0.042 264.695));
+  }
+  :root, .light {
+  --ui-primary: var(--ui-color-primary-500);
+  --ui-secondary: var(--ui-color-secondary-500);
+  --ui-success: var(--ui-color-success-500);
+  --ui-info: var(--ui-color-info-500);
+  --ui-warning: var(--ui-color-warning-500);
+  --ui-error: var(--ui-color-error-500);
+  }
+  .dark {
+  --ui-primary: var(--ui-color-primary-400);
+  --ui-secondary: var(--ui-color-secondary-400);
+  --ui-success: var(--ui-color-success-400);
+  --ui-info: var(--ui-color-info-400);
+  --ui-warning: var(--ui-color-warning-400);
+  --ui-error: var(--ui-color-error-400);
+  }
+}</style><script type="importmap">{"imports":{"#entry":"/_nuxt/BzFcyDY3.js"}}</script><style>:root { color: red }</style><style>.lang_it[data-v-da978d97]{font-size:1rem!important}</style><style>.form-container[data-v-2253fec4]{background-color:#cce7ff;border:1px solid #cce7ff;border-radius:8px;margin-top:20px;padding:20px}</style><link rel="stylesheet" href="/_nuxt/entry.D0n7VeuW.css" crossorigin><link rel="stylesheet" href="/_nuxt/TheFooter.Ci8851Dj.css" crossorigin><link rel="preload" as="fetch" crossorigin="anonymous" href="/park/_payload.json?000762e3-034d-41ea-bc23-c82abb0ec3de"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/BzFcyDY3.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/rKXT4Vdb.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/DAh-hkcO.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/nfji6Srx.js"><link rel="modulepreload" as="script" crossorigin href="/_nuxt/CUCRaSlr.js"><link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/_nuxt/builds/meta/000762e3-034d-41ea-bc23-c82abb0ec3de.json"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/fa-brands-400.cH1MgKbP.svg"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/fa-regular-400.gwj8Pxq-.svg"><link rel="prefetch" as="image" type="image/svg+xml" href="/_nuxt/fa-solid-900.B4ZZ7kfP.svg"><link rel="prefetch" as="style" crossorigin href="/_nuxt/default.vlC8zxt1.css"><link rel="prefetch" as="script" crossorigin href="/_nuxt/DhO8bJrx.js"><noscript>JavaScript is required</noscript><script type="module" src="/_nuxt/BzFcyDY3.js" crossorigin></script><script>"use strict";(()=>{const t=window,e=document.documentElement,c=["dark","light"],n=getStorageValue("localStorage","nuxt-color-mode")||"system";let i=n==="system"?u():n;const r=e.getAttribute("data-color-mode-forced");r&&(i=r),l(i),t["__NUXT_COLOR_MODE__"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=""+o+"",a="";e.classList?e.classList.add(s):e.className+=" "+s,a&&e.setAttribute("data-"+a,o)}function d(o){const s=""+o+"",a="";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,"g"),""),a&&e.removeAttribute("data-"+a)}function f(o){return t.matchMedia("(prefers-color-scheme"+o+")")}function u(){if(t.matchMedia&&f("").media!=="not all"){for(const o of c)if(f(":"+o).matches)return o}return"light"}})();function getStorageValue(t,e){switch(t){case"localStorage":return window.localStorage.getItem(e);case"sessionStorage":return window.sessionStorage.getItem(e);case"cookie":return getCookie(e);default:return null}}function getCookie(t){const c=("; "+window.document.cookie).split("; "+t+"=");if(c.length===2)return c.pop()?.split(";").shift()}</script></head><body><div id="__nuxt" class="isolate"><div id="page-wrapper" class="homepage is-preload px-20"><div class="row justify-center content-center"><div class="col-auto md:hidden"><div class="flex flex-row justify-around items-center gap-4 !my-4"><button class="!bg-green-800 lang_it">CS</button><button class="!bg-blue-800 lang_it">EN</button></div></div></div><nav id="nav" data-v-da978d97><ul class="flex justify-center content-center" data-v-da978d97><!--[--><li class="" data-v-da978d97><a href="/" class="" data-v-da978d97>Domov</a></li><li class="" data-v-da978d97><a href="/about#banner" class="" data-v-da978d97>Přeprava</a></li><li class="" data-v-da978d97><a aria-current="page" href="/park#park" class="router-link-active router-link-exact-active" data-v-da978d97>Park</a></li><li class="" data-v-da978d97><a href="/migration#migration" class="" data-v-da978d97>Stěhování</a></li><li class="" data-v-da978d97><a href="/contacts#contacts" class="" data-v-da978d97>Kontakt</a></li><!--]--><li data-v-da978d97><button class="!bg-green-800 lang_it" data-v-da978d97>CS</button></li><li data-v-da978d97><button class="!bg-blue-800 lang_it" data-v-da978d97>EN</button></li></ul></nav><!--[--><div></div><!--[--><section id="main" class="!pt-4" data-v-2253fec4><div class="container" data-v-2253fec4><div data-v-2253fec4><div data-v-2253fec4><section class="!mb-5" data-v-2253fec4><h2 class="major" data-v-2253fec4><span class="!bg-white" data-v-2253fec4>Vozový park</span></h2></section><section data-v-2253fec4><div data-v-2253fec4><div data-v-2253fec4><div data-v-2253fec4><div data-v-2253fec4><div data-v-2253fec4><div class="flex justify-center content-center" data-v-2253fec4><img decoding="async" class="details-image aligncenter lazy entered loaded" title="Dodávka skříňová 20 m3" draggable="false" src="/assets/images/car_2.webp" data-src="/assets/images/car_2.webp" alt="Dodávka skříňová 20 m3" width="351" height="263" data-ll-status="loaded" data-v-2253fec4></div><div data-v-2253fec4><h2 style="text-align:center;" data-v-2253fec4><strong data-v-2253fec4>Dodávka skříňová</strong></h2><h2 style="text-align:center;" data-v-2253fec4><strong data-v-2253fec4>20 m3</strong></h2></div><div class="fusion-text fusion-text-2" data-v-2253fec4><p class="fusion-responsive-typography-calculated" data-fontsize="19" data-lineheight="21.0833px" data-v-2253fec4>Používáme na stěhování bytů a domů o velikosti 1+kk až menší 3+kk, menších kanceláří a firem, vyklízení různých prostor a převoz těžkých břemen (pianino, klavír, trezor, ap.) <img title="Dodávka skříňová 20 m3" width="351" height="263" src="/assets/images/37.webp" data-v-2253fec4></p><div class="table-wrapper" data-v-2253fec4><table class="table-auto border border-gray-400 border-collapse w-full" data-v-2253fec4><tbody data-v-2253fec4><tr data-v-2253fec4><td class="border border-gray-400 p-2 font-bold" data-v-2253fec4>Vozidlo</td><td class="border border-gray-400 p-2 font-bold" data-v-2253fec4>Vozidlo 20m3 (Iveco Daily 35s12)</td></tr><!--[--><tr data-v-2253fec4><td class="border border-gray-400 p-2 font-semibold" data-v-2253fec4>Celková nosnost</td><td class="border border-gray-400 p-2" data-v-2253fec4>3,5t</td></tr><tr data-v-2253fec4><td class="border border-gray-400 p-2 font-semibold" data-v-2253fec4>Nosnost (nákladu max)</td><td class="border border-gray-400 p-2" data-v-2253fec4>750 kg</td></tr><tr data-v-2253fec4><td class="border border-gray-400 p-2 font-semibold" data-v-2253fec4>Hydraulické čelo</td><td class="border border-gray-400 p-2" data-v-2253fec4>NE</td></tr><tr data-v-2253fec4><td class="border border-gray-400 p-2 font-semibold" data-v-2253fec4>Délka – Výška – Šířka</td><td class="border border-gray-400 p-2" data-v-2253fec4>420 x 230 x 220 cm</td></tr><tr data-v-2253fec4><td class="border border-gray-400 p-2 font-semibold" data-v-2253fec4>Počet míst</td><td class="border border-gray-400 p-2" data-v-2253fec4>driver + 2</td></tr><!--]--></tbody></table></div></div></div></div></div></div></div></section></div></div></div></section><section class="!pt-5" data-v-2253fec4><h2 class="major !mb-2"><span>Jak připravit nábytek na stěhování?</span></h2><p class="text-center">Velké kusy nábytku, jako jsou skříně, postele nebo stoly, by měly být rozebrány na menší části. Demontáž usnadňuje manipulaci, snižuje riziko poškození a zjednodušuje přepravu. Při demontáži si důkladně označte jednotlivé díly a uchovejte všechny šrouby a další součástky v označených sáčcích.</p></section><!--]--><!--]--><footer id="footer" class="!pt-1"><div class="container"><p style="margin:0;">E-mail: <a href="mailto:kivenko1997@meta.ua">kivenko1997@meta.ua</a></p><p style="margin:0;">Telefon: <a href="tel:+420722767091">+420 722 767 091</a></p><p style="margin:0;">Sídlo společnosti je: Praha 9, Hloubětín, Nademlejnská 600/1, PSČ 198 00.</p><div id="copyright"><ul class="menu"><li>© 2025 Obchodní firma společnosti zní: Kivenko s.r.o.</li><li><a href="/"></a></li></ul></div></div></footer></div></div><div id="teleports"></div><script src="/assets/js/jquery.min.js"></script><script src="/assets/js/jquery.dropotron.min.js"></script><script src="/assets/js/jquery.scrolly.min.js"></script><script src="/assets/js/browser.min.js"></script><script src="/assets/js/breakpoints.min.js"></script><script src="/assets/js/util.js"></script><script src="/assets/js/main.js"></script><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/park/_payload.json?000762e3-034d-41ea-bc23-c82abb0ec3de">[{"state":1,"once":21,"_errors":22,"serverRendered":6,"path":24,"pinia":25,"prerenderedAt":37},["Reactive",2],{"$si18n:cached-locale-configs":3,"$si18n:resolved-locale":9,"$scolor-mode":10,"$ssite-config":13},{"cs":4,"en":7},{"fallbacks":5,"cacheable":6},[],true,{"fallbacks":8,"cacheable":6},[],"",{"preference":11,"value":11,"unknown":6,"forced":12},"system",false,{"_priority":14,"currentLocale":18,"defaultLocale":18,"env":19,"name":20},{"name":15,"env":16,"defaultLocale":17,"currentLocale":17},-10,-15,-2,"cs-CZ","production","nuxt-app",["Set"],["ShallowReactive",23],{},"/park",["Reactive",26],{"vehicles":27},{"vehicles":28},[29],{"name":30,"specs":31},"Vehicle 20m3 (Iveco Daily 35s12)",{"Total load capacity":32,"Load capacity (max. load)":33,"Hydraulic front":34,"Length – Height – Width":35,"Number of seats":36},"3,5t","750 kg","NE","420 x 230 x 220 cm","driver + 2",1757426225320]</script><script>window.__NUXT__={};window.__NUXT__.config={public:{content:{wsUrl:""},mdc:{components:{prose:true,map:{}},headings:{anchorLinks:{h1:false,h2:true,h3:true,h4:true,h5:false,h6:false}}},i18n:{baseUrl:"",defaultLocale:"cs",rootRedirect:"",redirectStatusCode:302,skipSettingLocaleOnNavigate:false,locales:[{code:"cs",name:"Čeština",iso:"cs-CZ",language:""},{code:"en",name:"English",iso:"en-US",language:""}],detectBrowserLanguage:{alwaysRedirect:false,cookieCrossOrigin:false,cookieDomain:"",cookieKey:"i18n_redirected",cookieSecure:false,fallbackLocale:"",redirectOn:"root",useCookie:true},experimental:{localeDetector:"",typedPages:true,typedOptionsAndMessages:false,alternateLinkCanonicalQueries:true,devCache:false,cacheLifetime:"",stripMessagesPayload:false,preload:false,strictSeo:false,nitroContextDetection:true},domainLocales:{cs:{domain:""},en:{domain:""}}}},app:{baseURL:"/",buildId:"000762e3-034d-41ea-bc23-c82abb0ec3de",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>

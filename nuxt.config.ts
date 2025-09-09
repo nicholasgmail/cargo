@@ -38,7 +38,8 @@ export default defineNuxtConfig({
                 // <noscript>JavaScript is required</noscript>
                 {textContent: 'JavaScript is required'}
             ]
-        }
+        },
+        public: '/docs',
     },
     postcss: {
         plugins: {
@@ -53,7 +54,8 @@ export default defineNuxtConfig({
                 '/'
             ],
             crawlLinks: true
-        }
+        },
+        preset: 'static'
     },
     modules: [
         '@nuxt/image',
@@ -66,8 +68,8 @@ export default defineNuxtConfig({
     i18n: {
         strategy: 'prefix_except_default',
         locales: [
-            { code: 'cs', name: 'Čeština', iso: 'cs-CZ', file: 'cs.json' },
-            { code: 'en', name: 'English', iso: 'en-US', file: 'en.json' }
+            {code: 'cs', name: 'Čeština', iso: 'cs-CZ', file: 'cs.json'},
+            {code: 'en', name: 'English', iso: 'en-US', file: 'en.json'}
         ],
         defaultLocale: 'cs',
         lazy: true,
