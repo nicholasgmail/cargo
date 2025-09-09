@@ -6,8 +6,8 @@ export default defineNuxtConfig({
         port: 3000
     },
     css: [
-        '~/assets/css/main.css',
-        '~/assets/css/tailwind.css'
+        '~assets/css/main.css',
+        '~assets/css/tailwind.css'
     ],
     app: {
         baseURL: '/',
