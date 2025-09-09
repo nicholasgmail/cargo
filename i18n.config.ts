@@ -10,3 +10,5 @@ export default defineI18nConfig(() => ({
         en
     }
 }))
+
+

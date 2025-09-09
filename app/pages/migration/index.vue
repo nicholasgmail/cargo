@@ -5,8 +5,8 @@ definePageMeta({
   layout: 'nosidebar'
 })
 
-const title = "Jak připravit nábytek na stěhování?";
-const description = "Velké kusy nábytku, jako jsou skříně, postele nebo stoly, by měly být rozebrány na menší části. Demontáž usnadňuje manipulaci, snižuje riziko poškození a zjednodušuje přepravu. Při demontáži si důkladně označte jednotlivé díly a uchovejte všechny šrouby a další součástky v označených sáčcích.";
+const title = "How to prepare furniture for moving?";
+const description = "Large pieces of furniture such as wardrobes, beds or tables should be disassembled into smaller parts. Disassembly makes handling easier, reduces the risk of damage and simplifies transport. When disassembling, carefully label the individual parts and keep all screws and other components in labeled bags.";
 
 </script>
 <template>
@@ -14,14 +14,10 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
   <article id="main" class="!p-0 !my-2">
     <div class="container">
       <section class="!pt-8 !mb-0">
-        <h2 class="major"><span>Cena stěhování Praha</span></h2>
+        <h2 class="major"><span>{{$t('Moving price Prague')}}</span></h2>
         <div class="!px-8">
-        <p> Hledáte profesionální a cenově dostupné stěhovací služby? Náš
-          ceník stěhování Praha je navržen tak, aby byl transparentní a odpovídal vašim potřebám. Cena se odvíjí od
-          velikosti stěhovaného prostoru, vzdálenosti a specifických požadavků, jako je demontáž nábytku nebo
-          obalové materiály.
-          Nabízíme možnost individuální kalkulace zdarma, abychom vám mohli poskytnout co nejpřesnější odhad.
-          Díky našim zkušenostem a profesionálnímu přístupu je stěhování s námi snadné a bez starostí!</p>
+        <p> {{
+            $t('Are you looking for professional and affordable moving services? Our price list for moving Prague is designed to be transparent and meet your needs.The price depends on the size of the space being moved, distance and specific requirements, such as dismantling furniture or packaging materials.We offer the option of a free individual calculation so that we can provide you with the most accurate estimate.Thanks to our experience and professional approach, moving with us is easy and worry - free!')}}</p>
         </div>
       </section>
       <section class="container-fluid !py-2 !mb-0">
@@ -31,29 +27,19 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
               <thead>
               <tr>
                 <td>
-                              <span data-index="44-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Služba" data-translation="Обслуговування"
-                                    data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Služba
+                              <span style="visibility: inherit !important;">{{$t('Service')}}
                               </span>
                 </td>
                 <td>
-                              <span data-index="45-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Obrázek" data-translation="Зображення"
-                                    data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Obrázek
+                              <span style="visibility: inherit !important;">{{$t('Picture')}}
                               </span>
                 </td>
                 <td>
-                              <span data-index="46-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Cena ( na hodinu)"
-                                    data-translation="Ціна (за годину)" data-ch="0" data-type="trSpan"
-                                    style="visibility: inherit !important;">Cena ( na hodinu)
+                              <span style="visibility: inherit !important;">{{$t('Price (per hour)')}}
                               </span>
                 </td>
                 <td>
-                              <span data-index="47-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Cena (Minimální cena)"
-                                    data-translation="Ціна (Мінімальна ціна)" data-ch="0" data-type="trSpan"
-                                    style="visibility: inherit !important;">Cena (Minimální cena)
+                              <span style="visibility: inherit !important;">{{$t(`Price (Minimum price)`)}}
                               </span>
                 </td>
               </tr>
@@ -61,160 +47,121 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
               <tbody>
               <tr>
                 <td>
-                              <span data-index="49-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Práce bez auta + 1 pracovník"
-                                    data-translation="Робота без автомобіля + 1 працівник" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Práce bez auta + 1
-                                pracovník
+                              <span style="visibility: inherit !important;">{{$t(`Work without a car + 1 worker`)}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/pracovnik.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/pracovnik.jpg"
-                         alt="Cena stěhování Praha" data-ll-status="loaded"></td>
+                         :alt="$t('Work without a car + 1 worker')" data-ll-status="loaded"></td>
                 <td>500</td>
                 <td>1500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="51-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Dodávka Furgon 17m³ + řidič"
-                                    data-translation="Фургон з закритим боксом 17 м3 + водій" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Dodávka Furgon 17m³
-                                + řidič
+                              <span style="visibility: inherit !important;">{{$t("Delivery Van 17m³ + driver")}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/117.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/117.jpg"
-                         alt="Cena stěhování Praha Dodávka 17m³" data-ll-status="loaded"></td>
+                         :alt="$t('Delivery Van 17m³ + driver')" data-ll-status="loaded"></td>
                 <td>1000</td>
                 <td>1500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="52-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Dodávka Furgon 17m³ + 2 pracovníci"
-                                    data-translation="Фургон з закритим боксом 17 м3 + 2 робочих" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Dodávka Furgon 17m³
-                                + 2 pracovníci
+                              <span style="visibility: inherit !important;">{{$t('Price of moving Prague 17m³ delivery with workers')}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/172.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/172.jpg"
-                         alt="Cena stěhování Praha Dodávka 17m³ s pracovníky" data-ll-status="loaded"></td>
+                         :alt="$t('Price of moving Prague 17m³ delivery with workers')" data-ll-status="loaded"></td>
                 <td>1500</td>
                 <td>2500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="53-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Dodávka Furgon 17m3+3pracovníci"
-                                    data-translation="Фургон з закритим боксом 17 м3+3 упаковки" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Dodávka Furgon
-                                17m3+3pracovníci
+                              <span style="visibility: inherit !important;">{{$t("Delivery Van 17 m3 + 3 workers")}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/317.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/317.jpg"
-                         alt="Cena stěhování Praha " data-ll-status="loaded"></td>
+                         :alt="$t('Moving price Prague')" data-ll-status="loaded"></td>
                 <td>2000</td>
                 <td>1500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="54-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Dodávka skříňová 20m3+řidič"
-                                    data-translation="Блок живлення типу 20м3 + драйвер" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Dodávka skříňová
-                                20m3+řidič
+                              <span style="visibility: inherit !important;">{{$t('Box van 20m3+driver')}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/120.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/120.jpg"
-                         alt="Cena stěhování Praha Dodávka 20m³" data-ll-status="loaded"></td>
+                         :alt="$t('Price of moving Prague Delivery 20m³')" data-ll-status="loaded"></td>
                 <td>1000</td>
                 <td>1500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="55-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Dodávka skříňová 20m3+2pracovníci"
-                                    data-translation="Тип блоку живлення 20 м3+2 упаковки" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Dodávka skříňová
-                                20m3+2pracovníci
+                              <span style="visibility: inherit !important;">{{$t("Box van 20m3+2 workers")}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/220.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/220.jpg"
-                         alt="Cena stěhování Praha 20m³ s pracovníky" data-ll-status="loaded"></td>
+                         :alt="$t('Box van 20m3+2 workers')" data-ll-status="loaded"></td>
                 <td>1500</td>
                 <td>2500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="56-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Dodávka skříňová 20m3+3pracovníci"
-                                    data-translation="Тип блоку живлення 20 м3+3 упаковки" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Dodávka skříňová
-                                20m3+3pracovníci
+                              <span style="visibility: inherit !important;">{{$t('Box van 20m3+3 workers')}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/320.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2022/04/320.jpg"
-                         alt="Pracovník" data-ll-status="loaded"></td>
+                         :alt="$t('Worker')" data-ll-status="loaded"></td>
                 <td>2000</td>
                 <td>1500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="57-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Nákladní auto 36m3+řidič"
-                                    data-translation="Вантажний вагон 36м3+водій" data-ch="0" data-type="trSpan"
-                                    style="visibility: inherit !important;">Nákladní auto 36m3+řidič
+                              <span style="visibility: inherit !important;">{{$t('Truck 36m3+driver')}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2019/12/Презентация9.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2019/12/Презентация9.jpg"
-                         alt=" Cena stěhování Praha Dodávka 36m³" data-ll-status="loaded"></td>
+                         :alt="$t('Price of moving Prague Delivery 36m³')" data-ll-status="loaded"></td>
                 <td>1100</td>
                 <td>1500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="58-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Nákladní auto 36m3+2pracovníci"
-                                    data-translation="Вантажний вагон 36м3+2практикума" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Nákladní auto
-                                36m3+2pracovníci
+                              <span style="visibility: inherit !important;">{{$t('Truck 36m3+2 workers')}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2022/11/362.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2022/11/362.jpg"
-                         alt="Cena stěhování Praha Dodávka 36m³ s pracovníky" data-ll-status="loaded"></td>
+                         :alt="$t('Price of moving Prague 36m³ delivery with workers')" data-ll-status="loaded"></td>
                 <td>2000</td>
                 <td>2500</td>
               </tr>
               <tr>
                 <td>
-                              <span data-index="59-0" data-translated="false" data-source-lang="cs"
-                                    data-target-lang="uk" data-value="Nákladní auto 36m3+3pracovníci"
-                                    data-translation="Вантажний вагон 36м3+3практикума" data-ch="0"
-                                    data-type="trSpan" style="visibility: inherit !important;">Nákladní auto
-                                36m3+3pracovníci
+                              <span style="visibility: inherit !important;">{{$t('Truck 36m3+3 workers')}}
                               </span>
                 </td>
                 <td><img class="lazy entered loaded" decoding="async"
                          src="https://www.stehovanicz.cz/wp-content/uploads/2019/12/Презентация7.jpg"
                          data-src="https://www.stehovanicz.cz/wp-content/uploads/2019/12/Презентация7.jpg"
-                         alt="Dodávka 17m³ s pracovníky" data-ll-status="loaded"></td>
+                         :alt="$t('17m³ delivery with workers')" data-ll-status="loaded"></td>
                 <td>2500</td>
                 <td>2500</td>
               </tr>
@@ -223,10 +170,9 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
           </div>
         </div>
       </section>
-      <section class="w-screen !py-2 !mb-0"><h2 class="major !m-0"><span>Cena stěhování Praha</span></h2>
+      <section class="w-screen !py-2 !mb-0"><h2 class="major !m-0"><span>{{$t("Moving price Prague")}}</span></h2>
         <div class="!p-2">
-        <p class="text-center"> Věříme, že Cena stěhování Praha by měla být transparentní a odpovídat kvalitě služeb.
-          Připravili jsme pro vás přehledný ceník, který zahrnuje všechny náklady.
+        <p class="text-center">{{$t('We believe that the price of moving Prague should be transparent and correspond to the quality of services. We have prepared a clear price list for you, which includes all costs.')}}
         </p>
         </div>
       </section>
@@ -238,24 +184,15 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                 <thead>
                 <tr>
                   <th>
-                                <span data-index="62-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Typ služby" data-translation="Тип послуги"
-                                      data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Typ
-                                  služby
+                                <span style="visibility: inherit !important;">{{$t("Typ služby")}}
                                 </span>
                   </th>
                   <th>
-                                <span data-index="63-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Cena od (Kč)"
-                                      data-translation="Ціна від (Eur)" data-ch="0" data-type="trSpan"
-                                      style="visibility: inherit !important;">Cena od (Kč)
+                                <span style="visibility: inherit !important;">{{$t('Price from (CZK)')}}
                                 </span>
                   </th>
                   <th>
-                                <span data-index="64-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Poznámky" data-translation="Примітки"
-                                      data-ch="0" data-type="trSpan" style="visibility: inherit !important;">
-                                  Poznámky
+                                <span style="visibility: inherit !important;">{{$t("Comment")}}
                                 </span>
                   </th>
                 </tr>
@@ -263,36 +200,22 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                 <tbody>
                 <tr>
                   <td>
-                                <span data-index="102-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Stěhování bytu (1+kk)"
-                                      data-translation="Переезжающая квартира (з 1 спальнею)" data-ch="0"
-                                      data-type="trSpan" style="visibility: inherit !important;">Stěhování bytu
-                                  (1+kk)
+                                <span style="visibility: inherit !important;">{{$t("Apartment moving (1+kk)")}}
                                 </span>
                   </td>
                   <td>
-                                <span data-index="103-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="2 500 Kč" data-translation="2 500 Крон"
-                                      data-ch="0" data-type="trSpan" style="visibility: inherit !important;">2 500
-                                  Kč
+                                <span style="visibility: inherit !important;">2 500 Kč
                                 </span>
                   </td>
                   <td>
-                                <span data-index="104-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Včetně balicího materiálu"
-                                      data-translation="Включаючи пакувальний матеріал" data-ch="0"
-                                      data-type="trSpan" style="visibility: inherit !important;">Včetně balicího
-                                  materiálu
+                                <span style="visibility: inherit !important;">{{$t("Including packaging material")}}
                                 </span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                                <span data-index="105-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Stěhování bytu (3+kk a více)"
-                                      data-translation="Переезжающая квартира (з 3 спальнями і більше)"
-                                      data-ch="0" data-type="trSpan" style="visibility: inherit !important;">
-                                  Stěhování bytu (3+kk a více)
+                                <span style="visibility: inherit !important;">
+                                  {{$t("Apartment moving (3+kk and more)")}}
                                 </span>
                   </td>
                   <td>
@@ -303,20 +226,13 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                                 </span>
                   </td>
                   <td>
-                                <span data-index="107-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Zahrnuje až 3 pracovníky"
-                                      data-translation="Включає в себе до 3 працівників" data-ch="0"
-                                      data-type="trSpan" style="visibility: inherit !important;">Zahrnuje až 3
-                                  pracovníky
+                                <span style="visibility: inherit !important;">{{$t("Includes up to 3 workers")}}
                                 </span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                                <span data-index="110-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Stěhování kanceláře"
-                                      data-translation="Переїжджає офіс" data-ch="0" data-type="trSpan"
-                                      style="visibility: inherit !important;">Stěhování kanceláře
+                                <span style="visibility: inherit !important;">{{$t("Office moving")}}
                                 </span>
                   </td>
                   <td>
@@ -327,21 +243,13 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                                 </span>
                   </td>
                   <td>
-                                <span data-index="112-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Možnost stěhování mimo pracovní dobu"
-                                      data-translation="Можливість переїзду в неробочий час" data-ch="0"
-                                      data-type="trSpan" style="visibility: inherit !important;">Možnost stěhování
-                                  mimo pracovní dobu
+                                <span style="visibility: inherit !important;">{{$t('Possibility of moving outside of working hours')}}
                                 </span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                                <span data-index="114-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Těžká břemena (piano, trezor)"
-                                      data-translation="Важкі вантажі (піаніно, сейф)" data-ch="0"
-                                      data-type="trSpan" style="visibility: inherit !important;">Těžká břemena
-                                  (piano, trezor)
+                                <span style="visibility: inherit !important;">{{$t('Heavy loads (piano, safe)')}}
                                 </span>
                   </td>
                   <td>
@@ -352,28 +260,18 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                                 </span>
                   </td>
                   <td>
-                                <span data-index="116-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Cena závisí na hmotnosti a podlaží"
-                                      data-translation="Ціна залежить від ваги та статі" data-ch="0"
-                                      data-type="trSpan" style="visibility: inherit !important;">Cena závisí na
-                                  hmotnosti a podlaží
+                                <span style="visibility: inherit !important;">{{$t('Price depends on weight and floor')}}
                                 </span>
                   </td>
                 </tr>
                 <tr>
                   <td>
-                                <span data-index="117-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Expresní stěhování"
-                                      data-translation="Експрес-переїзд" data-ch="0" data-type="trSpan"
-                                      style="visibility: inherit !important;">Expresní stěhování
+                                <span style="visibility: inherit !important;">{{$t('Express moving')}}
                                 </span>
                   </td>
                   <td>+20 %</td>
                   <td>
-                                <span data-index="118-0" data-translated="false" data-source-lang="cs"
-                                      data-target-lang="uk" data-value="Stěhování do 24 hodin"
-                                      data-translation="Переїзд через 24 години" data-ch="0" data-type="trSpan"
-                                      style="visibility: inherit !important;">Stěhování do 24 hodin
+                                <span style="visibility: inherit !important;">{{$t('Moving within 24 hours')}}
                                 </span>
                   </td>
                 </tr>
@@ -381,23 +279,12 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
               </table>
             </div>
             <p><strong>
-                          <span data-index="121-0" data-translated="false" data-source-lang="cs"
-                                data-target-lang="uk" data-value="Poznámka:" data-translation="Примітка:"
-                                data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Poznámka:
+                          <span style="visibility: inherit !important;">{{$t('Note:')}}
                           </span>
             </strong>
-              <span data-index="121-0" data-translated="false" data-source-lang="cs"
-                    data-target-lang="uk" data-value=" Přesná cena se odvíjí od specifikace zakázky. "
-                    data-translation=" Точна ціна залежить від специфікацій контракту. " data-ch="0"
-                    data-type="trSpan" style="visibility: inherit !important;"> Přesná cena se odvíjí
-                            od specifikace zakázky.
+              <span style="visibility: inherit !important;">
                           </span>
-              <span data-index="121-1" data-translated="false" data-source-lang="cs"
-                    data-target-lang="uk"
-                    data-value="Rádi vám připravíme nezávaznou cenovou nabídku zdarma."
-                    data-translation="Ми безкоштовно підготуємо ні до чого не зобов'язує пропозицію."
-                    data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Rádi vám
-                            připravíme nezávaznou cenovou nabídku zdarma.
+              <span style="visibility: inherit !important;"> {{$t('The exact price depends on the order specification.')}}
                           </span>
             </p>
           </div>
@@ -405,7 +292,7 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
       </section>
     </div>
   </article>
-  <aboutb :title :description/>
+  <aboutb :title="$t(title)" :description="$t(description)"/>
 </template>
 <style scoped>
 .page-wrapper {

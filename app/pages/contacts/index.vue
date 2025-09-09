@@ -135,75 +135,42 @@ const sendMessage = async () => {
           </div>
         </div>
       </div>
-      <div class="w-full pt-4 px-2 !mt-8">
-        <h3>
-                      <span data-index="296-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="📞 Objednejte si převoz snadno a rychle"
-                            data-translation="📞 Замовлення для легкої і швидкої транспортування" data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">📞 Objednejte si převoz
-                        snadno a rychle
-                      </span>
-        </h3>
-        <span data-index="297-0" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-              data-value=" Stačí nám zavolat nebo napsat. "
-              data-translation=" Просто зателефонуйте або напишіть нам. " data-ch="0"
-              data-type="trSpan" style="visibility: inherit !important;"> Stačí nám zavolat nebo
-                      napsat.
+      <div class="w-full pt-4 px-2 !mt-8">        <h3>
+                      <span style="visibility: inherit !important;">{{$t('📞 Order a transfer quickly and easily')}}
+                      </span>        </h3>
+        <span style="visibility: inherit !important;"> {{$t('Just call or write to us. ')}}
                     </span>
-        <span data-index="297-1" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-              data-value="Sdělíte, co a kdy potřebujete převézt, a my se o vše postaráme. "
-              data-translation="Скажіть, що і коли вам потрібно перевезти, і ми про все подбаємо. "
-              data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Sdělíte, co a kdy
-                      potřebujete převézt, a my se o vše postaráme.
+        <span style="visibility: inherit !important;">{{$t('You tell us what you need to transport and when, and we will take care of everything.')}}
                     </span>
-        <span data-index="297-2" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-              data-value="Přistavíme vhodné vozidlo, zajistíme personál i materiál. "
-              data-translation="Ми пригнам підходящий транспортний засіб, надамо персонал і матеріали. "
-              data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Přistavíme vhodné
-                      vozidlo, zajistíme personál i materiál.
+        <span style="visibility: inherit !important;">{{$t('We will provide a suitable vehicle, staff and materials.')}}
                     </span>
         <strong>
-                      <span data-index="297-3" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Realizujeme převozy po celé Praze a okolí"
-                            data-translation="Ми здійснюємо перевезення по Празі та околицях" data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Realizujeme převozy po celé
-                        Praze a okolí
+                      <span style="visibility: inherit !important;">{{$t('We provide transportation throughout Prague and the surrounding area.')}}
                       </span>
         </strong>
-        <span data-index="297-4" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-              data-value="v ten samý den.📱 " data-translation="в той же день.📱 " data-ch="0"
-              data-type="trSpan" style="visibility: inherit !important;"> v ten samý den.📱
+        <span style="visibility: inherit !important;">{{$t('on the same day.📱')}}
                     </span>
         <strong>
-                      <span data-index="297-5" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Telefon:" data-translation="Телефон:" data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">Telefon:
+                      <span style="visibility: inherit !important;">{{$t("Phone:")}}
                       </span>
         </strong>
-        <span data-index="297-6" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-              data-value="+420 722767091 📧 " data-translation="+420 722767091 📧 " data-ch="0"
-              data-type="trSpan" style="visibility: inherit !important;"> <a
-            href="tel:+420722767091">+420 722 767 091</a> 📧
+        <span  style="visibility: inherit !important;"> <a href="tel:+420722767091">+420 722 767 091</a> 📧
                     </span>
         <strong>
-                      <span data-index="297-7" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-                            data-value="E-mail:" data-translation="Електронна пошта:" data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">E-mail:
+                      <span style="visibility: inherit !important;">E-mail:
                       </span>
         </strong>
-        <span data-index="297-9" data-translated="true" data-source-lang="cs" data-target-lang="uk"
-              data-value="kivenko1997@meta.ua" data-translation="kivenko1997@meta.ua" data-ch="0"
-              data-type="trSpan" style="visibility: inherit !important;"><a href="mailto:kivenko1997@meta.ua">kivenko1997@meta.ua</a>
+        <span style="visibility: inherit !important;"><a href="mailto:kivenko1997@meta.ua">kivenko1997@meta.ua</a>
                     </span>
       </div>
       <div class="w-full pt-4 px-2 !mt-8">
         <form @submit.prevent="sendMessage" class="space-y-2">
-          <input v-model="name" type="string" placeholder="Vaše jméno"
+          <input v-model="name" type="string" :placeholder="$t('Your name')"
                  class="border border-gray-600 rounded p-2 !mt-5"/>
-          <input v-model="email" type="email" placeholder="Váš e-mail"
+          <input v-model="email" type="email" :placeholder="$t('Your email')"
                  class="border border-gray-600 rounded p-2 !mt-5"/>
-          <textarea v-model="message" placeholder="Zprávy" class="border border-gray-600 rounded p-2 !mt-5"></textarea>
-          <button type="submit" class="bg-blue-600 text-white p-2">Poslat</button>
+          <textarea v-model="message" :placeholder="$t('News')" class="border border-gray-600 rounded p-2 !mt-5"></textarea>
+          <button type="submit" class="bg-blue-600 text-white p-2">{{$t('Send')}}</button>
           <p>{{ status }}</p>
         </form>
       </div>

@@ -5,52 +5,40 @@ definePageMeta({
   layout: 'nosidebar'
 })
 const vehiclesStore = useVehiclesStore()
-const title = "Jak připravit nábytek na stěhování?";
-const description = "Velké kusy nábytku, jako jsou skříně, postele nebo stoly, by měly být rozebrány na menší části. Demontáž usnadňuje manipulaci, snižuje riziko poškození a zjednodušuje přepravu. Při demontáži si důkladně označte jednotlivé díly a uchovejte všechny šrouby a další součástky v označených sáčcích.";
+const title = "How to prepare furniture for moving?";
+const description = "Large pieces of furniture such as wardrobes, beds or tables should be disassembled into smaller parts. Disassembly makes handling easier, reduces the risk of damage and simplifies transport. When disassembling, carefully label the individual parts and keep all screws and other components in labeled bags.";
+
 </script>
 <template>
   <!-- Main -->
   <section id="main" class="!pt-4">
     <div class="container">
-      <div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-51027ef"
-           data-id="51027ef" data-element_type="column">
-        <div data-elementor-type="wp-page" data-elementor-id="13" class="elementor elementor-13">
+      <div >
+        <div>
           <section class="!mb-5">
-            <h2 class="major"><span class="!bg-white">Vozový park</span></h2>
+            <h2 class="major"><span class="!bg-white">{{$t('Fleet')}}</span></h2>
           </section>
-          <section
-              class="elementor-section elementor-top-section elementor-element elementor-element-9f75b68 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-              data-id="9f75b68" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-              <div
-                  class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-cc7ccd1"
-                  data-id="cc7ccd1" data-element_type="column">
-                <div class="elementor-widget-wrap elementor-element-populated">
-                  <div
-                      class="elementor-element elementor-element-9c266b6 elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                      data-id="9c266b6" data-element_type="widget" data-widget_type="text-editor.default">
-                    <div class="elementor-widget-container">
-                      <div class="!pb-8 flex justify-center items-center">
+          <section>
+            <div>
+              <div>
+                <div>
+                  <div>
+                    <div>
+                      <div class="flex justify-center content-center">
                       <img decoding="async"
                                                                     class="details-image aligncenter lazy entered loaded"
-                                                                    title="Dodávka skříňová 20 m3" draggable="false"
+                                                                    :title="$t('Box van 20 m3')" draggable="false"
                                                                     src="/assets/images/car_2.webp"
                                                                     data-src="/assets/images/car_2.webp"
-                                                                    alt="Dodávka skříňová 20 m3" width="351"
+                                                                    :alt="$t('Box van 20 m3')" width="351"
                                                                     height="263" data-ll-status="loaded"></div>
-                      <div
-                          class="fusion-title title fusion-title-3 fusion-sep-none fusion-title-center fusion-title-text fusion-title-size-three">
-                        <h2 class="fusion-responsive-typography-calculated" style="text-align: center;"
-                            data-fontsize="23" data-lineheight="28.0667px"><strong>Dodávka skříňová </strong></h2>
-                        <h2 class="fusion-responsive-typography-calculated" style="text-align: center;"
-                            data-fontsize="23" data-lineheight="28.0667px"><strong>20 m3</strong></h2></div>
+                      <div>
+                        <h2 style="text-align: center;"><strong>{{$t("Box van")}}</strong></h2>
+                        <h2 style="text-align: center;"><strong>20 m3</strong></h2></div>
                       <div class="fusion-text fusion-text-2"><p class="fusion-responsive-typography-calculated"
-                                                                data-fontsize="19" data-lineheight="21.0833px">Používáme
-                        na stěhování bytů a domů o velikosti 1+kk až menší 3+kk, menších kanceláří a firem, vyklízení
-                        různých prostor a převoz těžkých břemen (pianino, klavír, trezor, ap.)
-                        <img decoding="async"
-                             class="wp-image-1134 aligncenter lazy entered loaded"
-                            title="Dodávka skříňová 20 m3"
+                                                                data-fontsize="19" data-lineheight="21.0833px">
+                        {{$t('We use it for moving apartments and houses ranging in size from 1+kk to smaller 3+kk, smaller offices and companies, clearing various spaces and transporting heavy loads (piano, grand piano, safe, etc.)')}}
+                        <img :title="$t('Box van 20 m3')"
                              width="351"
                              height="263"
                              src="/assets/images/37.webp" />
@@ -59,13 +47,13 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                           <table class="table-auto border border-gray-400 border-collapse w-full">
                             <tbody>
                             <tr>
-                              <td class="border border-gray-400 p-2 font-bold">Vozidlo</td>
+                              <td class="border border-gray-400 p-2 font-bold">{{$t("Vehicle")}}</td>
                               <td class="border border-gray-400 p-2 font-bold">
-                                {{ vehiclesStore.vehicles[0].name }}
+                                {{ $t(vehiclesStore.vehicles[0].name) }}
                               </td>
                             </tr>
                             <tr v-for="(value, key) in vehiclesStore.vehicles[0].specs" :key="key">
-                              <td class="border border-gray-400 p-2 font-semibold">{{ key }}</td>
+                              <td class="border border-gray-400 p-2 font-semibold">{{ $t(key) }}</td>
                               <td class="border border-gray-400 p-2">{{ value }}</td>
                             </tr>
                             </tbody>
@@ -82,7 +70,7 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
       </div>
     </div>
   </section>
-  <aboutb :title :description/>
+  <aboutb :title="$t(title)" :description="$t(description)"/>
 </template>
 <style scoped>
 .form-container {

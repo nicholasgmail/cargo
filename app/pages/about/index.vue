@@ -1,12 +1,8 @@
 <script setup lang="ts">
-import Aboutb from "~/components/banner/aboutb.vue";
 
 definePageMeta({
   layout: 'nosidebar'
 })
-const vehiclesStore = useVehiclesStore()
-const title = "Jak připravit nábytek na stěhování?";
-const description = "Velké kusy nábytku, jako jsou skříně, postele nebo stoly, by měly být rozebrány na menší části. Demontáž usnadňuje manipulaci, snižuje riziko poškození a zjednodušuje přepravu. Při demontáži si důkladně označte jednotlivé díly a uchovejte všechny šrouby a další součástky v označených sáčcích.";
 
 </script>
 <template>
@@ -24,26 +20,14 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
           <div class="elementor-element elementor-element-2b86e27 elementor-widget elementor-widget-text-editor"
                data-id="2b86e27" data-element_type="widget" data-widget_type="text-editor.default">
             <div class="elementor-widget-container">
-              <h1 style="text-align: center;"><span style="color: #000000;"><strong><span data-index="42-0"
-                  data-translated="false"
-                  data-source-lang="cs"
-                  data-target-lang="uk"
-                  data-value="Stěhování těžkých břemen"
-                  data-translation="Переміщення важких вантажів"
-                  data-ch="1"
-                  data-type="trSpan"
-                  style="visibility: inherit !important;">Stěhování těžkých břemen</span></strong></span>
+              <h1 style="text-align: center;"><span style="color: #000000;"><strong>
+                <span style="visibility: inherit !important;">{{$t("Moving heavy loads")}}</span></strong></span>
               </h1>
               <p data-start="101" data-end="663">
-                <span data-index="43-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Potřebujete " data-translation="Вам необхідно " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">Potřebujete
+                <span style="visibility: inherit !important;">{{$t("You need")}}
                 </span>
                 <strong>
-                  <span data-index="43-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="přemístit masivní trezor" data-translation="перевезти масивний сейф"
-                              data-ch="0" data-type="trSpan" style="visibility: inherit !important;">přemístit masivní
-                    trezor
+                  <span style="visibility: inherit !important;">{{$t("move a massive safe")}}
                   </span>
                 </strong>
                 <span data-index="43-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
@@ -51,345 +35,96 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                             style="visibility: inherit !important;">,
                 </span>
                 <strong>
-                  <span data-index="43-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="rozměrný klavír" data-translation=" велике піаніно" data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">rozměrný klavír
+                  <span style="visibility: inherit !important;">{{$t("grand piano")}}
                   </span>
                 </strong>
-                <ya-tr-span data-index="43-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=" nebo jiný náklad velkých rozměrů? "
-                            data-translation=" або інший вантаж великого розміру? " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;"> nebo jiný náklad velkých rozměrů?
-                </ya-tr-span>
-                <ya-tr-span data-index="43-1" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Nabízíme " data-translation="Ми пропонуємо " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">Nabízíme
-                </ya-tr-span>
+                <span style="visibility: inherit !important;">{{$t("or other large cargo?")}}
+                </span>
+                <span style="visibility: inherit !important;">{{$t("We offer")}}
+                </span>
                 <strong>
-                  <ya-tr-span data-index="43-1" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="profesionální přepravu těžkých a objemných předmětů."
-                              data-translation="професійну транспортування важких і громіздких предметів." data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">profesionální přepravu těžkých
-                    a objemných předmětů.
-                  </ya-tr-span>
+                  <span style="visibility: inherit !important;">{{$t("professional transportation of heavy and bulky items.")}}
+                  </span>
                 </strong></p>
               <h2><strong>
-                <ya-tr-span data-index="44-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Stěhování pianin " data-translation="Рухомі піаніно " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Stěhování pianin
-                </ya-tr-span>
+                <span style="visibility: inherit !important;">{{$t("Moving pianos")}}
+                </span>
               </strong></h2>
               <p>
-                <ya-tr-span data-index="45-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Naši odborníci vědí, jak správně "
-                            data-translation="Наші фахівці знають, як правильно " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">Naši odborníci vědí, jak správně
-                </ya-tr-span>
+                <span style="visibility: inherit !important;">{{$t("Our experts know how to do it right")}}
+                </span>
                 <strong>
-                  <ya-tr-span data-index="45-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="zabalit" data-translation="пакувати" data-ch="0" data-type="trSpan"
-                              style="visibility: inherit !important;">zabalit
-                  </ya-tr-span>
+                  <span style="visibility: inherit !important;">{{$t("wrap")}}
+                  </span>
                 </strong>
-                <ya-tr-span data-index="45-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=" a " data-translation=" і " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;"> a
-                </ya-tr-span>
+                <span style="visibility: inherit !important;"> a
+                </span>
                 <strong>
-                  <ya-tr-span data-index="45-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="přepravovat klavíry a piana" data-translation="транспортувати піаніно"
-                              data-ch="0" data-type="trSpan" style="visibility: inherit !important;">přepravovat klavíry
-                    a piana
-                  </ya-tr-span>
+                  <span style="visibility: inherit !important;">{{$t("transport pianos and grand pianos")}}
+                  </span>
                 </strong>
-                <ya-tr-span data-index="45-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=", aby se minimalizovalo riziko poškození. "
-                            data-translation=", щоб звести до мінімуму ризик пошкодження. " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">, aby se minimalizovalo riziko
-                  poškození.
-                </ya-tr-span>
-                <ya-tr-span data-index="45-1" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Díky speciálním manipulačním technikám a balicím materiálům zajistíme, že váš nástroj dorazí na místo určení v bezchybném stavu."
-                            data-translation="Завдяки спеціальним технологіям обігу та пакувальних матеріалів ваш інструмент прибуде в пункт призначення у відмінному стані."
-                            data-ch="0" data-type="trSpan" data-selected="false"
-                            style="visibility: inherit !important;">Díky speciálním manipulačním technikám a balicím
-                  materiálům zajistíme, že váš nástroj dorazí na místo určení v bezchybném stavu.
-                </ya-tr-span>
+                <span style="visibility: inherit !important;">{{$t(", to minimize the risk of damage.")}}
+                </span>
+                <span style="visibility: inherit !important;">{{$t("Thanks to special handling techniques and packaging materials, we ensure that your instrument arrives at its destination in perfect condition.")}}
+                </span>
               </p>
               <h2><strong><a href="https://www.stehovanicz.cz/stehovani-trezoru/">
-                <ya-tr-span data-index="46-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Stěhování trezorů" data-translation="Переміщення сейфів" data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Stěhování trezorů
-                </ya-tr-span>
+                <span style="visibility: inherit !important;">{{$t("Safes moving")}}
+                </span>
               </a></strong></h2>
               <p><strong>
-                <ya-tr-span data-index="47-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Při stěhování trezorů" data-translation="При переміщенні сейфів" data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Při stěhování trezorů
-                </ya-tr-span>
+                <span style="visibility: inherit !important;"> {{$t("When moving safes")}}
+                </span>
               </strong>
-                <ya-tr-span data-index="47-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=" klademe důraz na maximální "
-                            data-translation=" ми приділяємо особливу увагу максимальної " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;"> klademe důraz na maximální
-                </ya-tr-span>
-                <strong>
-                  <ya-tr-span data-index="47-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="bezpečnost a" data-translation="безпеки і" data-ch="0" data-type="trSpan"
-                              style="visibility: inherit !important;">bezpečnost a
-                  </ya-tr-span>
-                </strong>
-                <ya-tr-span data-index="47-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=" používáme " data-translation=" використовуємо " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;"> používáme
-                </ya-tr-span>
-                <strong>
-                  <ya-tr-span data-index="47-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="speciální techniku" data-translation="спеціальну техніку" data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">speciální techniku
-                  </ya-tr-span>
-                </strong>
-                <ya-tr-span data-index="47-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=" pro manipulaci s těžkými břemeny."
-                            data-translation=" для переміщення важких вантажів." data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;"> pro manipulaci s těžkými břemeny.
-                </ya-tr-span>
+                <span style="visibility: inherit !important;"> {{$t("we emphasize maximum")}}
+                </span>
+                {{$t("safety and we use special equipment for handling heavy loads.")}}
               </p>
-              <h2><span style="color: #003366;"><strong><a style="color: #003366;"
-                                                           href="https://www.stehovanicz.cz/preprava-tezkych-bremen/"><ya-tr-span
-                  data-index="48-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                  data-value="Přeprava těžkých břemen v Praze i po ČR"
-                  data-translation="Перевезення великовагових вантажів у Празі після Чеської республіки" data-ch="0"
-                  data-type="trSpan"
-                  style="visibility: inherit !important;">Přeprava těžkých břemen v Praze i po ČR</ya-tr-span></a></strong></span>
+              <h2><span style="color: #003366;"><strong><a style="color: #003366;" href="https://www.stehovanicz.cz/preprava-tezkych-bremen/"><span
+                  style="visibility: inherit !important;">{{$t("Transportation of heavy loads in Prague and throughout the Czech Republic")}}</span></a></strong></span>
               </h2>
               <p><strong>
-                <ya-tr-span data-index="49-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Přizpůsobíme naše služby" data-translation="Ми адаптуємо наші послуги"
-                            data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Přizpůsobíme naše
-                  služby
-                </ya-tr-span>
+                <span style="visibility: inherit !important;">{{$t("We will customize our services")}}
+                </span>
               </strong>
-                <ya-tr-span data-index="49-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=" vašim potřebám. " data-translation=" до ваших потреб. " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;"> vašim potřebám.
-                </ya-tr-span>
-                <ya-tr-span data-index="49-1" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Nabízíme Stěhování těžkých břemen po celé České republice. "
-                            data-translation="Ми пропонуємо Перевезення важких вантажів по всій Чеській Республіці. "
-                            data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Nabízíme Stěhování
-                  těžkých břemen po celé České republice.
-                </ya-tr-span>
-                <ya-tr-span data-index="49-2" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Naši odborníci přijedou v dohodnutém termínu, připraví potřebnou techniku a zajistí stěhování tak, aby vyhovělo veškerým požadavkům zákazníka."
-                            data-translation="Наші фахівці прибувають в обумовлений час, готують необхідне обладнання і стежать за тим, щоб переїзд здійснювався таким чином, щоб відповідати всім вимогам замовника."
-                            data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Naši odborníci
-                  přijedou v dohodnutém termínu, připraví potřebnou techniku a zajistí stěhování tak, aby vyhovělo
-                  veškerým požadavkům zákazníka.
-                </ya-tr-span>
+                {{$t("to your needs. We offer heavy load moving throughout the Czech Republic. Our experts will arrive at the agreed date, prepare the necessary equipment and ensure the move meets all customer requirements.")}}
               </p>
-              <h2><strong>
-                <ya-tr-span data-index="50-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Jak probíhá proces stěhování těžkých břemen?"
-                            data-translation="Як відбувається процес переміщення важких вантажів?" data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Jak probíhá proces stěhování
-                  těžkých břemen?
-                </ya-tr-span>
+              <h2><strong>{{$t("How does the process of moving heavy loads work?")}}
+              </strong></h2>
+              <p>{{$t("When contacting our customers, we hold a consultation to find out their specific needs and requirements. Based on this, we will prepare a price quote and a detailed moving plan. On the agreed date, we will pack and prepare the loads for the move. During the move, we make sure that each item is carefully secured and protected against damage.")}}
+              </p>
+              <h2><strong>{{$t("Advantages of our services")}}
               </strong></h2>
               <p>
-                <ya-tr-span data-index="51-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Při kontaktu s našimi " data-translation="При зверненні до нас " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Při kontaktu s našimi
-                </ya-tr-span>
-                <strong>
-                  <ya-tr-span data-index="51-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="sjednáme konzultaci" data-translation="організуйте консультацію" data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">sjednáme konzultaci
-                  </ya-tr-span>
-                </strong>
-                <ya-tr-span data-index="51-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=", kde zjistíme jejich konkrétní potřeby a požadavky. "
-                            data-translation=", де ми з'ясуємо їхні конкретні потреби. " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">, kde zjistíme jejich konkrétní potřeby a požadavky.
-                </ya-tr-span>
-                <ya-tr-span data-index="51-1" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Na základě toho " data-translation="Виходячи з цього, " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Na základě toho
-                </ya-tr-span>
-                <strong>
-                  <ya-tr-span data-index="51-1" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="připravíme cenovou nabídku a detailní plán stěhování"
-                              data-translation="ми підготуємо комерційну пропозицію та детальний план переїзду"
-                              data-ch="0" data-type="trSpan" style="visibility: inherit !important;">připravíme cenovou
-                    nabídku a detailní plán stěhování
-                  </ya-tr-span>
-                </strong>
-                <ya-tr-span data-index="51-1" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=". " data-translation=". " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">.
-                </ya-tr-span>
-                <ya-tr-span data-index="51-2" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="V dohodnutý termín " data-translation="В обумовлений час " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">V dohodnutý termín
-                </ya-tr-span>
-                <strong>
-                  <ya-tr-span data-index="51-2" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="zabalíme a připravíme břemena k přesunu"
-                              data-translation="упакуємо і підготуємо вантажі до переїзду" data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">zabalíme a připravíme břemena k
-                    přesunu
-                  </ya-tr-span>
-                </strong>
-                <ya-tr-span data-index="51-2" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="." data-translation="." data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">.
-                </ya-tr-span>
-                <ya-tr-span data-index="51-3" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Při stěhování dbáme na to, aby každý předmět byl pečlivě zajištěn a chráněn proti poškození."
-                            data-translation="При переміщенні ми дбаємо про те, щоб кожен предмет був ретельно закріплений і захищений від пошкоджень."
-                            data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Při stěhování dbáme
-                  na to, aby každý předmět byl pečlivě zajištěn a chráněn proti poškození.
-                </ya-tr-span>
-              </p>
-              <h2><strong>
-                <ya-tr-span data-index="52-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Výhody našich služeb" data-translation="Переваги наших послуг" data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Výhody našich služeb
-                </ya-tr-span>
-              </strong></h2>
-              <p>
-                <ya-tr-span data-index="53-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Naše " data-translation="Наші " data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">Naše
-                </ya-tr-span>
-                <strong>
-                  <ya-tr-span data-index="53-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="stěhovací služby" data-translation="послуги по переїзду" data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">stěhovací služby
-                  </ya-tr-span>
-                </strong>
-                <ya-tr-span data-index="53-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=" jsou výhodné nejen " data-translation=" вигідні не тільки " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;"> jsou výhodné nejen
-                </ya-tr-span>
-                <strong>
-                  <ya-tr-span data-index="53-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="cenové dostupnosti" data-translation="доступністю за ціною" data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">cenové dostupnosti
-                  </ya-tr-span>
-                </strong>
-                <ya-tr-span data-index="53-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=", ale komplexnosti a profesionálnímu přístupu."
-                            data-translation=", але і складністю і професійним підходом." data-ch="0" data-type="trSpan"
-                            style="visibility: inherit !important;">, ale komplexnosti a profesionálnímu přístupu.
-                </ya-tr-span>
+                  {{$t("Our moving services are advantageous not only in terms of affordability, but also in terms of complexity and professional approach.")}}
               </p>
               <ul>
-                <li><strong>
-                  <ya-tr-span data-index="54-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="Zkušený tým" data-translation="Досвідчена команда" data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">Zkušený tým
-                  </ya-tr-span>
-                </strong>
-                  <ya-tr-span data-index="54-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value=" – Naši pracovníci mají dlouholeté zkušenosti pro bezpečnou manipulaci s těžkými břemeny."
-                              data-translation=" – Наші співробітники мають багаторічний досвід у безпечному поводженні з великоваговими вантажами."
-                              data-ch="0" data-type="trSpan" style="visibility: inherit !important;"> – Naši pracovníci
-                    mají dlouholeté zkušenosti pro bezpečnou manipulaci s těžkými břemeny.
-                  </ya-tr-span>
+                <li>{{$t("Experienced team – Our workers have many years of experience in safely handling heavy loads.")}}
                 </li>
-                <li><strong>
-                  <ya-tr-span data-index="55-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="Moderní vybavení" data-translation="Сучасні зручності" data-ch="0"
-                              data-type="trSpan" style="visibility: inherit !important;">Moderní vybavení
-                  </ya-tr-span>
-                </strong>
-                  <ya-tr-span data-index="55-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value=" – Používáme techniku, která zaručuje bezpečné stěhování těžkých předmětů."
-                              data-translation=" – ми використовуємо техніку, яка гарантує безпечне переміщення важких предметів."
-                              data-ch="0" data-type="trSpan" style="visibility: inherit !important;"> – Používáme
-                    techniku, která zaručuje bezpečné stěhování těžkých předmětů.
-                  </ya-tr-span>
+                <li>{{$t("Modern equipment – ​​We use technology that guarantees the safe moving of heavy objects.")}}
                 </li>
-                <li><strong>
-                  <ya-tr-span data-index="56-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="Pojištění" data-translation="Страхування" data-ch="0" data-type="trSpan"
-                              style="visibility: inherit !important;">Pojištění
-                  </ya-tr-span>
-                </strong>
-                  <ya-tr-span data-index="56-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value=" – Nabízíme pojištění, které pokrývá případné škody způsobené během manipulace a přepravy."
-                              data-translation=" – ми пропонуємо страховку, яка покриває будь-який потенційний збиток, заподіяний при вантажно-розвантажувальних роботах і транспортуванні."
-                              data-ch="0" data-type="trSpan" style="visibility: inherit !important;"> – Nabízíme
-                    pojištění, které pokrývá případné škody způsobené během manipulace a přepravy.
-                  </ya-tr-span>
+                <li>{{$t("Insurance – We offer insurance that covers any damage caused during handling and transportation.")}}
                 </li>
-                <li><strong>
-                  <ya-tr-span data-index="57-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="Flexibilita" data-translation="Гнучкість" data-ch="0" data-type="trSpan"
-                              style="visibility: inherit !important;">Flexibilita
-                  </ya-tr-span>
-                </strong>
-                  <ya-tr-span data-index="57-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value=" – Stěhujeme i o víkendech a svátcích bez příplatků."
-                              data-translation=" – ми переїжджаємо навіть у вихідні і святкові дні без додаткової оплати."
-                              data-ch="0" data-type="trSpan" style="visibility: inherit !important;"> – Stěhujeme i o
-                    víkendech a svátcích bez příplatků.
-                  </ya-tr-span>
+                <li>{{$t("Flexibility – We move on weekends and holidays at no extra charge.")}}
                 </li>
               </ul>
-              <h2 style="text-align: center;"><span style="color: #000000;"><strong><ya-tr-span data-index="58-0"
-                                                                                                data-translated="false"
-                                                                                                data-source-lang="cs"
-                                                                                                data-target-lang="uk"
-                                                                                                data-value="Stěhování těžkých břemen – "
-                                                                                                data-translation="Перевезення важких вантажів – "
-                                                                                                data-ch="0"
-                                                                                                data-type="trSpan"
-                                                                                                style="visibility: inherit !important;">Stěhování těžkých břemen – </ya-tr-span></strong></span><span
-                  style="color: #000000;"><strong><ya-tr-span data-index="58-0" data-translated="false"
-                                                              data-source-lang="cs" data-target-lang="uk"
-                                                              data-value="Ceník " data-translation="Прайс-лист "
-                                                              data-ch="0" data-type="trSpan"
-                                                              style="visibility: inherit !important;">Ceník </ya-tr-span></strong></span>
+              <h2 style="text-align: center;"><span style="color: #000000;"><strong>{{$t("Moving heavy loads – Price list")}}</strong></span>
               </h2>
               <div class="table-wrapper">
                 <table>
                   <thead>
                   <tr>
-                    <th><span style="color: #000000;"><ya-tr-span data-index="59-0" data-translated="false"
-                                                                  data-source-lang="cs" data-target-lang="uk"
-                                                                  data-value="Služba" data-translation="Обслуговування"
-                                                                  data-ch="0" data-type="trSpan"
-                                                                  style="visibility: inherit !important;">Služba</ya-tr-span></span>
+                    <th><span style="color: #000000;">{{$t("Service")}}</span>
                     </th>
-                    <th><span style="color: #000000;"><ya-tr-span data-index="60-0" data-translated="false"
-                                                                  data-source-lang="cs" data-target-lang="uk"
-                                                                  data-value="Základní cena"
-                                                                  data-translation="Базова ціна" data-ch="0"
-                                                                  data-type="trSpan"
-                                                                  style="visibility: inherit !important;">Základní cena</ya-tr-span></span>
+                    <th><span style="color: #000000;">{{$t("Base price")}}</span>
                     </th>
-                    <th><span style="color: #000000;"><ya-tr-span data-index="61-0" data-translated="false"
-                                                                  data-source-lang="cs" data-target-lang="uk"
-                                                                  data-value="Příplatek"
-                                                                  data-translation="Додаткова плата" data-ch="0"
-                                                                  data-type="trSpan"
-                                                                  style="visibility: inherit !important;">Příplatek</ya-tr-span></span>
+                    <th><span style="color: #000000;">{{$t("Surcharge")}}</span>
                     </th>
                   </tr>
                   </thead>
                   <tbody>
                   <tr>
-                    <td data-label="Služba"><strong><span style="color: #000000;"><ya-tr-span data-index="62-0"
-                                                                                              data-translated="false"
-                                                                                              data-source-lang="cs"
-                                                                                              data-target-lang="uk"
-                                                                                              data-value="Stěhování předmětu od 100 do 199 kg"
-                                                                                              data-translation="Переміщення об'єкта вагою від 100 до 199 кг"
-                                                                                              data-ch="0"
-                                                                                              data-type="trSpan"
-                                                                                              style="visibility: inherit !important;">Stěhování předmětu od 100 do 199 kg</ya-tr-span></span></strong>
+                    <td>{{$t("Moving an object from 100 to 199 kg")}}
                     </td>
                     <td class="price" data-label="Základní cena"><span style="color: #ff0000;">1 250,-</span></td>
                     <td class="price" data-label="Příplatek"><span style="color: #ff0000;"><ya-tr-span data-index="63-0"
@@ -401,24 +136,11 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                                                                                                        data-ch="0"
                                                                                                        data-type="trSpan"
                                                                                                        style="visibility: inherit !important;">+ 250,-</ya-tr-span></span><br><span
-                        style="color: #ff0000;"><ya-tr-span data-index="63-0" data-translated="false"
-                                                            data-source-lang="cs" data-target-lang="uk"
-                                                            data-value="za patro či 20 m donášky"
-                                                            data-translation="для доставки на поверх або 20 м"
-                                                            data-ch="0" data-type="trSpan"
-                                                            style="visibility: inherit !important;">za patro či 20 m donášky</ya-tr-span></span>
+                        style="color: #ff0000;">{{$t("per floor or 20 m of delivery")}}</span>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Služba"><span style="color: #000000;"><strong><ya-tr-span data-index="64-0"
-                                                                                              data-translated="false"
-                                                                                              data-source-lang="cs"
-                                                                                              data-target-lang="uk"
-                                                                                              data-value="Stěhování předmětu od 200 do 299 kg"
-                                                                                              data-translation="Переміщення об'єкта вагою від 200 до 299 кг"
-                                                                                              data-ch="0"
-                                                                                              data-type="trSpan"
-                                                                                              style="visibility: inherit !important;">Stěhování předmětu od 200 do 299 kg</ya-tr-span></strong></span>
+                    <td data-label="Služba"><span style="color: #000000;"><strong>{{$t("Moving an object from 200 to 299 kg")}}</strong></span>
                     </td>
                     <td class="price" data-label="Základní cena"><p><span style="color: #ff0000;">1 800,-</span></p>
                     </td>
@@ -431,24 +153,11 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                                                                                                        data-ch="0"
                                                                                                        data-type="trSpan"
                                                                                                        style="visibility: inherit !important;">+ 350,-</ya-tr-span></span><br><span
-                        style="color: #ff0000;"><ya-tr-span data-index="65-1" data-translated="false"
-                                                            data-source-lang="cs" data-target-lang="uk"
-                                                            data-value="za patro či 20 m donášky"
-                                                            data-translation="за доставку по поверху або 20 м"
-                                                            data-ch="0" data-type="trSpan"
-                                                            style="visibility: inherit !important;">za patro či 20 m donášky</ya-tr-span></span>
+                        style="color: #ff0000;">{{$t("per floor or 20 m of delivery")}}</span>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Služba"><strong><span style="color: #000000;"><ya-tr-span data-index="66-0"
-                                                                                              data-translated="false"
-                                                                                              data-source-lang="cs"
-                                                                                              data-target-lang="uk"
-                                                                                              data-value="Stěhování předmětu od 300 do 399 kg"
-                                                                                              data-translation="Переміщення об'єкта вагою від 300 до 399 кг"
-                                                                                              data-ch="0"
-                                                                                              data-type="trSpan"
-                                                                                              style="visibility: inherit !important;">Stěhování předmětu od 300 do 399 kg</ya-tr-span></span></strong>
+                    <td><strong><span style="color: #000000;">{{$t("Moving an object from 300 to 399 kg")}}</span></strong>
                     </td>
                     <td class="price" data-label="Základní cena"><p><span style="color: #ff0000;">3 000,-</span></p>
                     </td>
@@ -461,24 +170,11 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                                                                                                        data-ch="0"
                                                                                                        data-type="trSpan"
                                                                                                        style="visibility: inherit !important;">+ 500,-</ya-tr-span></span><br><span
-                        style="color: #ff0000;"><ya-tr-span data-index="67-1" data-translated="false"
-                                                            data-source-lang="cs" data-target-lang="uk"
-                                                            data-value="za patro či 20 m donášky"
-                                                            data-translation="за доставку по підлозі або 20 м"
-                                                            data-ch="0" data-type="trSpan" data-selected="false"
-                                                            style="visibility: inherit !important;">za patro či 20 m donášky</ya-tr-span></span>
+                        style="color: #ff0000;">{{$t("per floor or 20 m of delivery")}}</span>
                     </td>
                   </tr>
                   <tr>
-                    <td data-label="Služba"><strong><span style="color: #000000;"><ya-tr-span data-index="68-0"
-                                                                                              data-translated="false"
-                                                                                              data-source-lang="cs"
-                                                                                              data-target-lang="uk"
-                                                                                              data-value="Stěhování předmětu od 400 do 499 kg"
-                                                                                              data-translation="Вага рухомого об'єкта від 400 до 499 кг"
-                                                                                              data-ch="0"
-                                                                                              data-type="trSpan"
-                                                                                              style="visibility: inherit !important;">Stěhování předmětu od 400 do 499 kg</ya-tr-span></span></strong>
+                    <td data-label="Služba"><strong><span style="color: #000000;">{{$t("Moving an object from 400 to 499 kg")}}</span></strong>
                     </td>
                     <td class="price" data-label="Základní cena"><p><span style="color: #ff0000;">5 000,-</span></p>
                     </td>
@@ -491,42 +187,16 @@ const description = "Velké kusy nábytku, jako jsou skříně, postele nebo sto
                                                                                                        data-ch="0"
                                                                                                        data-type="trSpan"
                                                                                                        style="visibility: inherit !important;">+ 750,-</ya-tr-span></span><br><span
-                        style="color: #ff0000;"><ya-tr-span data-index="69-1" data-translated="false"
-                                                            data-source-lang="cs" data-target-lang="uk"
-                                                            data-value="za patro či 20 m donášky"
-                                                            data-translation="за доставку по поверху або 20 м"
-                                                            data-ch="0" data-type="trSpan"
-                                                            style="visibility: inherit !important;">za patro či 20 m donášky</ya-tr-span></span>
+                        style="color: #ff0000;"> {{$t("per floor or 20 m of delivery")}}</span>
                     </td>
                   </tr>
                   </tbody>
                 </table>
               </div>
-              <h2><strong>
-                <ya-tr-span data-index="70-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Kontaktujte nás " data-translation="Зв'язатися з нами " data-ch="0"
-                            data-type="trSpan" style="visibility: inherit !important;">Kontaktujte nás
-                </ya-tr-span>
+              <h2><strong>{{$t("Contact us")}}
               </strong></h2>
               <p>
-                <ya-tr-span data-index="71-0" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value="Pomůžeme s přesunem " data-translation="Ми можемо допомогти з переміщенням "
-                            data-ch="0" data-type="trSpan" style="visibility: inherit !important;">Pomůžeme s přesunem
-                </ya-tr-span>
-                <strong>
-                  <ya-tr-span data-index="71-1" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                              data-value="klavírů" data-translation="піаніно" data-ch="0" data-type="trSpan"
-                              style="visibility: inherit !important;">klavírů
-                  </ya-tr-span>
-                </strong>
-                <ya-tr-span data-index="71-2" data-translated="false" data-source-lang="cs" data-target-lang="uk"
-                            data-value=", trezorů, strojů a dalších objemných předmětů a zajistíme hladký průběh celého procesu. Naše firma je zde, aby vám poskytla profesionální, bezpečné a cenově dostupné řešení pro všechny vaše potřeby v oblasti stěhování."
-                            data-translation=", сейфів, верстатів та інших громіздких предметів і забезпечимо безперебійне виконання всього процесу. Наша компанія готова надати вам професійне, безпечне і доступне рішення для всіх ваших потреб в області переїзду."
-                            data-ch="0" data-type="trSpan" style="visibility: inherit !important;">, trezorů, strojů a
-                  dalších objemných předmětů a zajistíme hladký průběh celého procesu. Naše firma je zde, aby vám
-                  poskytla profesionální, bezpečné a cenově dostupné řešení pro všechny vaše potřeby v oblasti
-                  stěhování.
-                </ya-tr-span>
+                {{$t("We can help you move pianos, safes, machinery and other bulky items and ensure the entire process runs smoothly. Our company is here to provide you with a professional, safe and affordable solution for all your moving needs.")}}
               </p>
             </div>
           </div>

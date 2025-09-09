@@ -6,11 +6,11 @@ const route = useRoute()
 
 // твої посилання з hash
 const links = [
-  {name: 'Domov', path: '/', hash: ''},
-  {name: 'Přeprava', path: '/about', hash: '#banner'},
-  {name: 'Park', path: '/park', hash: '#park'},
-  {name: 'Stěhování', path: '/migration', hash: '#migration'},
-  {name: 'Kontakt', path: '/contacts', hash: '#contacts'}
+  {name: "Home", path: '/', hash: ''},
+  {name: "Transportation", path: '/about', hash: '#banner'},
+  {name: "Park", path: '/park', hash: '#park'},
+  {name: "Moving", path: '/migration', hash: '#migration'},
+  {name: "Contact", path: '/contacts', hash: '#contacts'}
 ]
 
 // функція яка перевіряє активність
@@ -32,7 +32,7 @@ const switchLanguage = (locale: string) => {
       <li v-for="link in links" :key="link.hash"
           :class="{ current: isActive(link).value }">
         <NuxtLink :to="{ path: link.path, hash: link.hash }">
-          {{ link.name }}
+          {{ $t(link.name) }}
         </NuxtLink>
       </li>
       <li>

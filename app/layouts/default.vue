@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const link = { name: 'kontaktujte nás', path: '/contacts', hash: '#contacts' };
+
+const link = { name: 'contact us', path: '/contacts', hash: '#contacts' };
 
 </script>
 <template>
@@ -9,12 +10,10 @@ const link = { name: 'kontaktujte nás', path: '/contacts', hash: '#contacts' };
     <!-- Banner -->
     <section id="banner">
       <div class="content">
-        <h2>Výhody profesionálních stěhovacích služeb</h2>
-        <p>Kvalitní a odolné balicí materiály,
-          Rychlá a bezpečná přeprava,
-          Profesionální poradenství a pomoc</p>
-        <NuxtLink :to="{ path: link.path, hash: link.hash }" class="button scrolly">
-          {{link.name}}
+        <h2>{{ $t('Benefits of professional moving services')}}</h2>
+        <p>{{ $t('High-quality and durable packaging materials, Fast and safe transportation, Professional advice and assistance')}}
+        </p><NuxtLink :to="{ path: link.path, hash: link.hash }" class="button scrolly">
+         {{ $t(link.name)}}
         </NuxtLink>
       </div>
     </section>

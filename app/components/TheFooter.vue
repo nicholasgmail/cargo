@@ -9,7 +9,7 @@ const year = new Date().getFullYear()
       <!-- Copyright -->
       <div id="copyright">
         <ul class="menu">
-          <li>&copy; {{ year }} Obchodní firma společnosti zní: Kivenko s.r.o.</li><li>
+          <li>&copy; {{ year }} {{ $t(`The company's business name is: Kivenko s.r.o.`)}}</li><li>
           <a href="/"></a></li>
         </ul>
       </div>
