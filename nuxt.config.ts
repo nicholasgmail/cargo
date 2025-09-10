@@ -47,10 +47,8 @@ export default defineNuxtConfig({
     devtools: {enabled: true},
     nitro: {
         prerender: {
-            routes: [
-                '/'
-            ],
-            crawlLinks: true
+            routes: [],
+            crawlLinks: false
         },
         // Куди збирається сервер (за замовчуванням .output/)
         output: {
