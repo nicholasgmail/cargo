@@ -33,7 +33,7 @@ export default defineNuxtConfig({
             ],
             noscript: [
                 // <noscript>JavaScript is required</noscript>
-                {textContent: 'JavaScript is required'}
+                {textContent: 'cargo'}
             ]
         },
     },
