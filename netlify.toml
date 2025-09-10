@@ -2,3 +2,5 @@
   NPM_FLAGS="--legacy-peer-deps"
   YARN_VERSION = "1.22.22" # або іншу стабільну версію
   NODE_VERSION = "23"
+  NPM_FLAGS="--max-old-space-size=4096"
+
