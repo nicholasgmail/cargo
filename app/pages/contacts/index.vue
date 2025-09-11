@@ -18,8 +18,13 @@ onMounted(() => {
       style: 'https://tiles.openfreemap.org/styles/bright',
       center: [14.5279861, 50.1018614],
       attributionControl: false,
-      zoom: 11.15
+      zoom: 11.15,
+      dragPan: false,
+      scrollZoom: false,
+      doubleClickZoom: false,
+      touchZoomRotate: false
     })
+
 
     // Додаємо свій кастомний блок
     const attributionEl = document.createElement('div');
