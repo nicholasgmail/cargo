@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
     compatibilityDate: '2025-10-04',
-    ssr: true,
+    ssr: false,
     devServer: {
         host: '0.0.0.0',
         port: 3000
@@ -51,20 +51,20 @@ export default defineNuxtConfig({
             crawlLinks: false
         },
         // Куди збирається сервер (за замовчуванням .output/)
-        output: {
-            dir: '.output',
-            serverDir: '.output/server',
-            publicDir: '.output/public'
-        },
+       // output: {
+       //     dir: '.output',
+       //     serverDir: '.output/server',
+       //     publicDir: '.output/public'
+       // },
 
         // Пресет для деплоя
         preset: 'netlify', // 'static', 'node-server', 'vercel', 'netlify', 'cloudflare', ...
 
         // Шляхи, які будуть включені у збірку
-        include: [
-            './server/**',    // всі твої API
-            './utils/**'      // кастомні утиліти
-        ],
+       // include: [
+       //     './server/**',    // всі твої API
+       //     './utils/**'      // кастомні утиліти
+       // ],
 
         // Ігноровані файли
         exclude: [
