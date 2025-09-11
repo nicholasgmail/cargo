@@ -28,7 +28,7 @@ onMounted(() => {
       </div>
       <div class="col-auto">
         <h1><a href="/" id="logo">
-          <NuxtImg src="/assets/images/vintage_truck.svg" alt="Obchodní firma společnosti zní: Kivenko s.r.o."
+          <NuxtImg src="/images/vintage_truck.svg" alt="Obchodní firma společnosti zní: Kivenko s.r.o."
                    title="Obchodní firma společnosti zní: Kivenko s.r.o." class="logo_img"/>
         </a></h1>
       </div>

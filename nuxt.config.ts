@@ -18,13 +18,13 @@ export default defineNuxtConfig({
             ],
             script: [
                 // <script src="https://myawesome-lib.js"></script>
-                {src: '/assets/js/jquery.min.js', tagPosition: "bodyClose"},
-                {src: '/assets/js/jquery.dropotron.min.js', tagPosition: "bodyClose"},
-                {src: '/assets/js/jquery.scrolly.min.js', tagPosition: "bodyClose"},
-                {src: '/assets/js/browser.min.js', tagPosition: "bodyClose"},
-                {src: '/assets/js/breakpoints.min.js', tagPosition: "bodyClose"},
-                {src: '/assets/js/util.js', tagPosition: "bodyClose"},
-                {src: '/assets/js/main.js', tagPosition: "bodyClose"},
+                {src: '/js/jquery.min.js', tagPosition: "bodyClose"},
+                {src: '/js/jquery.dropotron.min.js', tagPosition: "bodyClose"},
+                {src: '/js/jquery.scrolly.min.js', tagPosition: "bodyClose"},
+                {src: '/js/browser.min.js', tagPosition: "bodyClose"},
+                {src: '/js/breakpoints.min.js', tagPosition: "bodyClose"},
+                {src: '/js/util.js', tagPosition: "bodyClose"},
+                {src: '/js/main.js', tagPosition: "bodyClose"},
             ],
             // please note that this is an area that is likely to change
             style: [

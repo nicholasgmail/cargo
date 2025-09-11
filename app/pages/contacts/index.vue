@@ -46,7 +46,7 @@ onMounted(() => {
               'type': 'Feature',
               'properties': {
                 'description':
-                    `<img src="/assets/images/vintage_truck.svg"/><strong>Obchodní firma společnosti zní: Kivenko s.r.o.</strong>
+                    `<img src="/images/vintage_truck.svg"/><strong>Obchodní firma společnosti zní: Kivenko s.r.o.</strong>
                     <p style="margin: 0">Můj e-mail: <a href="mailto:kivenko1997@meta.ua">kivenko1997@meta.ua</a></p>
                     <p style="margin: 0">Telefon: <a href="tel:+420722767091">+420 722 767 091</a></p>
                     <p style="margin: 0">Sídlo společnosti je: Praha 9, Hloubětín, Nademlejnská 600/1, PSČ 198 00.</p>`,

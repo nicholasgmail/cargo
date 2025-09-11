@@ -28,8 +28,8 @@ const description = "Large pieces of furniture such as wardrobes, beds or tables
                       <img decoding="async"
                                                                     class="details-image aligncenter lazy entered loaded"
                                                                     :title="$t('Box van 20 m3')" draggable="false"
-                                                                    src="/assets/images/car_2.webp"
-                                                                    data-src="/assets/images/car_2.webp"
+                                                                    src="/images/car_2.webp"
+                                                                    data-src="/images/car_2.webp"
                                                                     :alt="$t('Box van 20 m3')" width="351"
                                                                     height="263" data-ll-status="loaded"></div>
                       <div>
@@ -41,7 +41,7 @@ const description = "Large pieces of furniture such as wardrobes, beds or tables
                         <img :title="$t('Box van 20 m3')"
                              width="351"
                              height="263"
-                             src="/assets/images/37.webp" />
+                             src="/images/37.webp" />
                            </p>
                         <div class="table-wrapper">
                           <table class="table-auto border border-gray-400 border-collapse w-full">
