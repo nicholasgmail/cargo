@@ -1,3 +1,4 @@
+
 export default defineNuxtConfig({
     compatibilityDate: '2025-10-04',
     ssr: false,
@@ -24,7 +25,7 @@ export default defineNuxtConfig({
                 {src: '/js/browser.min.js', tagPosition: "bodyClose"},
                 {src: '/js/breakpoints.min.js', tagPosition: "bodyClose"},
                 {src: '/js/util.js', tagPosition: "bodyClose"},
-                {src: '/js/main.js', tagPosition: "bodyClose"},
+               // {src: '/js/main.js', tagPosition: "bodyClose"},
             ],
             // please note that this is an area that is likely to change
             style: [

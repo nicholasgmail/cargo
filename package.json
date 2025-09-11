@@ -16,6 +16,7 @@
     "@pinia/nuxt": "^0.5.4",
     "@vueuse/core": "^11.0.3",
     "autoprefixer": "^10.4.20",
+    "jquery": "^3.7.1",
     "maplibre-gl": "^5.7.1",
     "nodemailer": "^7.0.6",
     "nuxt": "^4.0.3",
