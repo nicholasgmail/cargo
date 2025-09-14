@@ -19,8 +19,8 @@ onMounted(() => {
     <div class="row justify-center content-center">
       <div class="col-auto md:hidden">
         <div class="flex flex-row justify-around items-center gap-4 !my-4">
-          <button class="!bg-green-800 lang_it" @click="switchLanguage('cs')">CS</button>
-          <button class="!bg-blue-800 lang_it" @click="switchLanguage('en')">EN</button>
+          <button class="!bg-green-800 lang_it" @click="switchLanguage('en')">CS</button>
+          <button class="!bg-blue-800 lang_it" @click="switchLanguage('cs')">EN</button>
         </div>
       </div>
     </div>

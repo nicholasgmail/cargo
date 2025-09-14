@@ -114,10 +114,10 @@ onMounted(() => {
         </NuxtLink>
       </li>
       <li>
-        <button class="!bg-green-800 lang_it" @click="switchLanguage('cs')">CS</button>
+        <button class="!bg-green-800 lang_it" @click="switchLanguage('en')">CS</button>
       </li>
       <li>
-        <button class="!bg-blue-800 lang_it" @click="switchLanguage('en')">EN</button>
+        <button class="!bg-blue-800 lang_it" @click="switchLanguage('cs')">EN</button>
       </li>
     </ul>
   </nav>
