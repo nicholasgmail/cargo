@@ -100,7 +100,9 @@ export default defineNuxtConfig({
         '@nuxtjs/sitemap'
     ],
     sitemap: {
-        siteUrl: 'https://cargocs.netlify.app', // твій домен
+        siteUrl: 'https://cargocs.netlify.app',
+        sitemapName: 'sitemap',
+        sitemaps: true,
         routes: [
             {
                 url: '/',
