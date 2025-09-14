@@ -13,10 +13,13 @@ export default defineNuxtConfig({
     app: {
         baseURL: '/',
         head: {
+            link: [
+                { rel: 'canonical', href: 'https://cargocs.netlify.app' }
+            ],
             meta: [
                 // <meta name="viewport" content="width=device-width, initial-scale=1">
                 {name: "google-site-verification", content: "3PYM3TfL_GtQkBNeopppCRj5IDcdOGE5CDGMLYTz7EM"},
-                {name: 'viewport', content: 'width=deviyace-width, initial-scale=1'}
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' }
             ],
             script: [
                 // <script src="https://myawesome-lib.js"></script>
