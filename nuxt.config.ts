@@ -93,8 +93,47 @@ export default defineNuxtConfig({
         '@nuxt/content',
         'nuxt-og-image',
         '@pinia/nuxt',
-        '@nuxtjs/i18n'
+        '@nuxtjs/i18n',
+        '@nuxtjs/sitemap'
     ],
+    sitemap: {
+        siteUrl: 'https://cargocs.netlify.app', // твій домен
+        routes: [
+            {
+                url: '/',
+                lastmod: new Date().toISOString(),
+                xhtmlLinks: [
+                    { rel: 'alternate', hreflang: 'uk', href: 'https://cargocs.netlify.app/uk/' },
+                    { rel: 'alternate', hreflang: 'en', href: 'https://cargocs.netlify.app/en/' }
+                ]
+            },
+            {
+                url: '/about',
+                lastmod: new Date().toISOString(),
+                xhtmlLinks: [
+                    { rel: 'alternate', hreflang: 'uk', href: 'https://cargocs.netlify.app/uk/about' },
+                    { rel: 'alternate', hreflang: 'en', href: 'https://cargocs.netlify.app/en/about' }
+                ]
+            },
+            {
+                url: '/contacts',
+                lastmod: new Date().toISOString()
+            },
+            {
+                url: '/migration',
+                lastmod: new Date().toISOString()
+            },
+            {
+                url: '/park',
+                lastmod: new Date().toISOString()
+            }
+        ],
+        defaults: {
+            changefreq: 'weekly',
+            priority: 0.7,
+            lastmod: new Date()
+        }
+    },
     i18n: {
         strategy: 'prefix_except_default',
         locales: [

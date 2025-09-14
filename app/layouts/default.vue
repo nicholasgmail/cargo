@@ -17,6 +17,8 @@ onMounted(() => {
   }
 })
 
+setHeader(event, 'content-type', 'application/xml')
+
 </script>
 <template>
   <div id="page-wrapper" class="homepage is-preload px-20">
