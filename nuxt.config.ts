@@ -103,7 +103,7 @@ export default defineNuxtConfig({
                 url: '/',
                 lastmod: new Date().toISOString(),
                 xhtmlLinks: [
-                    { rel: 'alternate', hreflang: 'uk', href: 'https://cargocs.netlify.app/uk/' },
+                    { rel: 'alternate', hreflang: 'cs', href: 'https://cargocs.netlify.app/uk/' },
                     { rel: 'alternate', hreflang: 'en', href: 'https://cargocs.netlify.app/en/' }
                 ]
             },
@@ -111,7 +111,7 @@ export default defineNuxtConfig({
                 url: '/about',
                 lastmod: new Date().toISOString(),
                 xhtmlLinks: [
-                    { rel: 'alternate', hreflang: 'uk', href: 'https://cargocs.netlify.app/uk/about' },
+                    { rel: 'alternate', hreflang: 'cs', href: 'https://cargocs.netlify.app/uk/about' },
                     { rel: 'alternate', hreflang: 'en', href: 'https://cargocs.netlify.app/en/about' }
                 ]
             },
