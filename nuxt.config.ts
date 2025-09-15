@@ -102,10 +102,10 @@ export default defineNuxtConfig({
     schemaOrg: {
         identity: 'Organization',
     },
-    sitemap: {
-        sources: [
-            'https://cargocs.netlify.app/sitemap.xml',
-        ]
+    seo: {
+        meta: {
+            description: 'The company\'s business name is: Kivenko s.r.o.',
+        },
     },
     i18n: {
         strategy: 'prefix_except_default',
