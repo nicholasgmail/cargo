@@ -53,7 +53,7 @@ export default defineNuxtConfig({
     nitro: {
         prerender: {
             routes: [],
-            crawlLinks: false
+            crawlLinks: false,
         },
         // Куди збирається сервер (за замовчуванням .output/)
        // output: {
@@ -97,47 +97,15 @@ export default defineNuxtConfig({
         'nuxt-og-image',
         '@pinia/nuxt',
         '@nuxtjs/i18n',
-        '@nuxtjs/sitemap'
+        '@nuxtjs/seo'
     ],
+    schemaOrg: {
+        identity: 'Organization',
+    },
     sitemap: {
-        siteUrl: 'https://cargocs.netlify.app',
-        sitemapName: 'sitemap',
-        sitemaps: true,
-        routes: [
-            {
-                url: '/',
-                lastmod: new Date().toISOString(),
-                xhtmlLinks: [
-                    { rel: 'alternate', hreflang: 'en', href: 'https://cargocs.netlify.app/cs/' },
-                    { rel: 'alternate', hreflang: 'cs', href: 'https://cargocs.netlify.app/en/' }
-                ]
-            },
-            {
-                url: '/about',
-                lastmod: new Date().toISOString(),
-                xhtmlLinks: [
-                    { rel: 'alternate', hreflang: 'en', href: 'https://cargocs.netlify.app/cs/about' },
-                    { rel: 'alternate', hreflang: 'cs', href: 'https://cargocs.netlify.app/en/about' }
-                ]
-            },
-            {
-                url: '/contacts',
-                lastmod: new Date().toISOString()
-            },
-            {
-                url: '/migration',
-                lastmod: new Date().toISOString()
-            },
-            {
-                url: '/park',
-                lastmod: new Date().toISOString()
-            }
-        ],
-        defaults: {
-            changefreq: 'weekly',
-            priority: 0.7,
-            lastmod: new Date()
-        }
+        sources: [
+            'https://cargocs.netlify.app/sitemap.xml',
+        ]
     },
     i18n: {
         strategy: 'prefix_except_default',
