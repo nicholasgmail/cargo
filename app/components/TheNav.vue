@@ -23,6 +23,14 @@ function isActive(link: { path: string; hash: string }) {
 const i18n = useI18n()
 const localeCookie = useCookie('locale')
 
+useHead({
+  title: `The company\'s business name is — Kivenko s.r.o.`,
+  titleTemplate: '%s',
+  meta: [
+    { name: 'description', content: 'The company\'s business name is: Kivenko s.r.o.' }
+  ]
+})
+
 const switchLanguage = (locale: string) => {
   i18n.locale.value = locale
   localeCookie.value = locale

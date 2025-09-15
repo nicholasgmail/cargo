@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     app: {
         baseURL: '/',
         head: {
+            title: 'The company\'s business name is: Kivenko s.r.o.',
             link: [
                 { rel: 'canonical', href: 'https://cargocs.netlify.app' }
             ],
